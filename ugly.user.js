@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Main Script
 // @namespace    http://tampermonkey.net/
-// @version      0.0.1
+// @version      0.1
 // @description  Adds action buttons to the table for site redirect, alert PCE and SIREN, mailto with PCE, and relancer
 // @author       You
 // @match        https://watt-else.pro/*
@@ -9,1867 +9,1542 @@
 // @connect      *
 // ==/UserScript==
 
-(function (H, v) {
-  const HS = L;
-  const h = H();
+(function (p, q) {
+  const pl = t;
+  const R = p();
   while (!![]) {
     try {
-      const E =
-        parseInt(HS(0x1e8)) / (0x10 * 0x24a + -0xf5b + -0x1544) +
-        (-parseInt(HS(0x1e4)) /
-          (0x20b * -0xd + -0x42 * -0x50 + -0x5f1 * -0x1)) *
-          (parseInt(HS(0x1fd)) / (0x1 * -0x153 + 0x1604 + 0x14ae * -0x1)) +
-        (-parseInt(HS(0x2ec)) / (0x22 * -0x44 + 0x29a + 0x672)) *
-          (-parseInt(HS(0x291)) / (0x1612 + 0x62 * -0xd + -0x1113)) +
-        -parseInt(HS(0x22e)) / (-0x1ab5 + 0xa0c * 0x2 + 0x6a3) +
-        (parseInt(HS(0x2d0)) / (0x109a + -0x6 * 0x14b + -0x8d1)) *
-          (-parseInt(HS(0x2f2)) / (0xe5 * -0x9 + -0x24a2 + 0x2cb7)) +
-        parseInt(HS(0x24c)) / (0x2393 * 0x1 + 0x1a + -0x1 * 0x23a4) +
-        parseInt(HS(0x2e5)) / (0xaeb * 0x1 + -0x6f2 + 0x35 * -0x13);
-      if (E === v) {
+      const K =
+        parseInt(pl(0x1cd)) / (0x1bd7 * -0x1 + 0x1 * 0x9f5 + -0x11e3 * -0x1) +
+        parseInt(pl(0x18e)) / (-0x1005 * -0x1 + -0x1486 + 0x483) +
+        (-parseInt(pl(0x216)) / (-0xfad + 0x1064 + -0x1 * 0xb4)) *
+          (-parseInt(pl(0x235)) / (0x101 * -0x13 + 0xf1 * -0x26 + 0x36dd)) +
+        parseInt(pl(0x20a)) / (-0xadf + -0x1 * -0x781 + 0x363) +
+        (parseInt(pl(0x15b)) / (-0x49 * -0x33 + 0x11 * 0x22b + 0x6 * -0x890)) *
+          (parseInt(pl(0x15c)) / (-0xb * -0x33d + 0x15 * 0x61 + -0x2b8d)) +
+        (-parseInt(pl(0x1b5)) / (-0xe9a + -0x253d + -0x7 * -0x769)) *
+          (-parseInt(pl(0x219)) / (-0x1 * -0x2203 + -0x400 + -0x9fe * 0x3)) +
+        -parseInt(pl(0x243)) / (-0x1a33 + 0x58d + 0x14b0);
+      if (K === q) {
         break;
       } else {
-        h["push"](h["shift"]());
+        R["push"](R["shift"]());
       }
-    } catch (X) {
-      h["push"](h["shift"]());
+    } catch (j) {
+      R["push"](R["shift"]());
     }
   }
-})(W, 0x3a44d + 0xa059 * 0x1 + 0xfa4a);
-function x() {
+})(M, 0xe5103 + -0x6 * 0x76a4 + -0x3271a);
+function M() {
+  const W5 = [
+    "responseText",
+    "action-buttons-added",
+    "input[value=\x22mandat\x20KO\x22]",
+    "Mono\x20site\x20:\x20PCE\x20non\x20mentionné",
+    "text",
+    "sorting",
+    "none",
+    "console",
+    ".action-buttons-added\x20.btn-danger",
+    "application/x-www-form-urlencoded;\x20charset=UTF-8",
+    "btn\x20btn-sm\x20btn-danger",
+    "input[type=\x22checkbox\x22]",
+    "target",
+    "change_mandat_status",
+    "Mandat\x20illisible",
+    "X-CSRF-TOKEN",
+    "tr.heading\x20[name=\x22actions\x22]",
+    "Mandat\x20absent",
+    "fetch",
+    "#uc2m_token2",
+    "className",
+    "e-mail\x20OK",
+    "apply",
+    "bind",
+    ".btn.default.btn-outline.nolock",
+    "closest",
+    "map",
+    "label",
+    "Date\x20de\x20mandat\x20expiré",
+    "href",
+    "contains",
+    "XMLHttpRequest",
+    "includes",
+    "open",
+    "/statut_mandat",
+    "Failed\x20to\x20save\x20KO\x20motives.\x20Server\x20returned\x20an\x20error.",
+    "GET",
+    "name",
+    "querySelectorAll",
+    "object",
+    "type",
+    "Table\x20disappeared,\x20will\x20try\x20again\x20later",
+    "statut-mandat-dropdown",
+    "à\x20vérifier",
+    "Failed\x20to\x20save\x20KO\x20motives:\x20",
+    "Failed\x20to\x20save\x20statut\x20mandat.\x20Network\x20error\x20or\x20CORS\x20issue.\x20Check\x20console\x20for\x20details.",
+    "Table\x20not\x20found,\x20retrying\x20in\x20500ms...",
+    "undefined",
+    "<html",
+    "Failed\x20to\x20save\x20statut\x20mandat:",
+    "detail",
+    "true",
+    "1px",
+    "mandat\x20KO",
+    "2336120tUjvpu",
+    "input[type=\x22checkbox\x22]:checked",
+    "debu",
+    "Sélectionner\x20motifs",
+    "some",
+    "Could\x20not\x20find\x20the\x20associated\x20row!",
+    "Table\x20observer\x20setup\x20complete",
+    ".action-buttons-added",
+    "td:nth-of-type(4)",
+    "credentials",
+    "⛔\x20Cette\x20affaire\x20est\x20supprimée",
+    "tr.heading",
+    "3JDsfsN",
+    "auto",
+    "button",
+    "31401zogFOi",
+    "message",
+    "Relancer",
+    "string",
+    "td:nth-of-type(9)",
+    "startsWith",
+    "classList",
+    "error",
+    "Selected\x20motives:",
+    ".statut-mandat-dropdown",
+    "status",
+    "Error\x20setting\x20up\x20the\x20request:\x20",
+    "mydatatable",
+    "querySelector",
+    "textContent",
+    "Failed\x20to\x20fetch\x20",
+    "Failed\x20to\x20save\x20KO\x20motives:",
+    "headers",
+    "motifs_ko[]",
+    "value",
+    "Actions",
+    "Reset\x20selectedMotives\x20array\x20for\x20KO\x20motives\x20dropdown",
+    "hasAttribute",
+    "Processed\x20result:",
+    "mandat\x20OK",
+    "getElementById",
+    "innerHTML",
+    "DOMContentLoaded",
+    "3314548esVXAj",
+    "result",
+    "Error\x20setting\x20up\x20the\x20relance\x20request:\x20",
+    "call",
+    "Failed\x20to\x20save\x20statut\x20mandat:\x20",
+    "gger",
+    "function\x20*\x5c(\x20*\x5c)",
+    "forEach",
+    "childList",
+    "stateObject",
+    "parentNode",
+    "btn\x20btn-sm\x20btn-info",
+    "Error\x20setting\x20up\x20fetch\x20request\x20for\x20relance:",
+    "display",
+    "16184110BYmLfh",
+    "Loading...",
+    "title",
+    "X-Requested-With",
+    "table",
+    "Elements\x20enabled.\x20Still\x20watching\x20for\x20new\x20elements.",
+    "&body=",
+    "Sélectionner\x20statut",
+    "Making\x20request\x20to:",
+    "Mandat",
+    "div",
+    "head",
+    "Failed\x20to\x20relance\x20mandat\x20KO:",
+    "Mandat\x20non\x20signé",
+    "With\x20payload:",
+    "Auto-updated\x20status\x20to\x20\x27mandat\x20KO\x27\x20due\x20to\x20KO\x20motives\x20selection",
+    "statut-mandat-dropbtn",
+    "onclick",
+    "radio",
+    "https://watt-else.pro/opportunite/",
+    "input",
+    "motif_ko_autre",
+    "https://energy-retail-france.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?searchType=2&sen=a3R&sen=a1S&sen=a35&sen=a46&sen=a26&sen=a4b&sen=00O&sen=001&sen=a0b&sen=003&sen=00T&sen=a1E&sen=500&sen=00U&sen=005&sen=a0C&sen=006&sen=a0E&sen=800&sen=a3O&sen=a0N&sen=a3Q&str=",
+    "Veuillez\x20sélectionner\x20un\x20statut!",
+    "parseFromString",
+    "colspan",
+    "appendChild",
+    "toggle",
+    "while\x20(true)\x20{}",
+    "Mandat\x20de\x20récupération\x20des\x20données",
+    "200px",
+    "style",
+    "toString",
+    "1280490OgwNvM",
+    "14YoEvHz",
+    "readyState",
+    "Le\x20courtier\x20n\x27a\x20pas\x20été\x20notifié.\x20Veuillez\x20essayer\x20une\x20autre\x20méthode\x20de\x20communication.",
+    "Relance...",
+    "PCE\x20mentionné\x20différent\x20du\x20PCE\x20consulté",
+    "find",
+    "length",
+    "VI-",
+    "btn\x20btn-sm\x20btn-warning\x20mandat-button",
+    "dataset",
+    "data-src",
+    "now",
+    "finally",
+    "Authentication\x20issue.\x20You\x20may\x20need\x20to\x20refresh\x20the\x20page\x20and\x20log\x20in\x20again.",
+    "parse",
+    "&subject=",
+    "log",
+    "counter",
+    "Le\x20courtier\x20n\x27a\x20pas\x20été\x20notifié.\x20Erreur\x20du\x20serveur.",
+    "\x20ko-motives-select-added",
+    "characterData",
+    "Autre",
+    "Processed\x20relance\x20result:",
+    "warn",
+    "createTextNode",
+    "Failed!",
+    "Failed\x20to\x20save\x20KO\x20motives.\x20Network\x20error\x20or\x20CORS\x20issue.\x20Check\x20console\x20for\x20details.",
+    "substring",
+    "td:nth-of-type(6)\x20a",
+    "margin",
+    "Raw\x20response:",
+    "__proto__",
+    "&initialViewMode=summary",
+    "actions",
+    "btn\x20btn-sm\x20btn-primary",
+    "click",
+    "...",
+    "\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)",
+    "init",
+    "Saving...",
+    "Success!",
+    "\x0a\x20\x20\x20\x20\x20\x20/*\x20Dropdown\x20container\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown,\x20.statut-mandat-dropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Dropdown\x20button\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropbtn,\x20.statut-mandat-dropbtn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f8f9fa;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ced4da;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20left;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-overflow:\x20ellipsis;\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Dropdown\x20content\x20(hidden\x20by\x20default)\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown-content,\x20.statut-mandat-dropdown-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20min-width:\x20250px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x20300px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow-y:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x208px\x2016px\x200\x20rgba(0,0,0,0.2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x205px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Show\x20the\x20dropdown\x20menu\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown-content.show,\x20.statut-mandat-dropdown-content.show\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Checkbox\x20container\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown-content\x20label,\x20.statut-mandat-dropdown-content\x20label\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-bottom:\x201px\x20solid\x20#f1f1f1;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown-content\x20label:hover,\x20.statut-mandat-dropdown-content\x20label:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f1f1f1;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Checkbox\x20style\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown-content\x20input[type=\x22checkbox\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20vertical-align:\x20middle;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Save\x20button\x20style\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-save-btn,\x20.statut-mandat-save-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#007bff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#0069d9;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20.ko-motives-save-btn:hover,\x20.statut-mandat-save-btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#0069d9;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Make\x20the\x20motives\x20cell\x20visible\x20*/\x0a\x20\x20\x20\x20\x20\x20#mydatatable\x20td:nth-of-type(10)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20table-cell\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20/*\x20Make\x20the\x20statut\x20mandat\x20cell\x20visible\x20*/\x0a\x20\x20\x20\x20\x20\x20#mydatatable\x20td:nth-of-type(9)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20table-cell\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20#mydatatable\x20th[name=\x22statut_mandat_motifs_ko\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20table-cell\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20180px\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20#mydatatable\x20th[name=\x22statut_mandat_pfo\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20table-cell\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20120px\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Adjust\x20the\x20column\x20header\x20for\x20the\x20filter\x20row\x20*/\x0a\x20\x20\x20\x20\x20\x20#mydatatable\x20tr.filter\x20th:nth-of-type(10),\x20#mydatatable\x20tr.filter\x20th:nth-of-type(9)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20table-cell\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20",
+    "action",
+    "push",
+    "then",
+    "include",
+    "info",
+    "Error\x20fetching\x20mandat\x20link:",
+    "Changed\x20to\x20mandat\x20KO\x20status,\x20KO\x20motives\x20should\x20be\x20editable",
+    "getAttribute",
+    "794198bCoPXf",
+    "Failed\x20to\x20relance\x20mandat\x20KO.\x20Network\x20error\x20or\x20CORS\x20issue.\x20Check\x20console\x20for\x20details.",
+    "subtree",
+    "catch",
+    "block",
+    "Content-Type",
+    "pfo_relance_btn",
+    ".btn-danger",
+    "match",
+    "data",
+    "toLowerCase",
+    "POST",
+    "constructor",
+    "append",
+    "_blank",
+    "Initial\x20table\x20processing\x20complete",
+    "disabled",
+    "setAttribute",
+    "/relance_mandat_ko",
+    "createElement",
+    "observe",
+    ".mt-overlay",
+    "statut_mandat_pfo",
+    "cors",
+    "remove",
+    "show",
+    "ko-motives-dropbtn",
+    "rowspan",
+    "Bonjour,%0D%0A%0D%0AVeuillez\x20trouver\x20ci-joint\x20le\x20mandat\x20du\x20client\x20",
+    "exception",
+    "flex",
+    ".mandat-button",
+    "Error!",
+    "Error\x20setting\x20up\x20fetch\x20request:",
+    "false",
+    "addEventListener",
+    "return\x20(function()\x20",
+    "Enregistrer",
+    "Could\x20not\x20extract\x20opportunity\x20ID\x20from\x20the\x20URL:\x20",
+    "8InXXXi",
+    "Failed\x20to\x20save\x20statut\x20mandat.\x20Server\x20returned\x20an\x20error.",
+    "select[name=\x22mandat_motifs_ko[]\x22]",
+    "Date\x20de\x201ère\x20consultation\x20GRDF\x20antérieure\x20à\x20date\x20du\x20mandat",
+    "stopPropagation",
+    "checked",
+    "tbody\x20tr",
+    "EMAIL",
+    "test",
+    "Relance\x20response\x20status:",
+    ".statut-mandat-dropbtn",
+    "[name=\x22actions\x22]",
+    "Mail\x20non\x20valable\x20:\x20retransfert\x20de\x20mail",
+    "td:nth-of-type(10)",
+    "width",
+    "pathname",
+    "2px",
+    "col",
+    "input[name=\x22statut-mandat\x22]:checked",
+    ".ko-motives-dropdown",
+    "location",
+    "Could\x20not\x20find\x20the\x20site\x20URL!",
+    "mode",
+    "search",
+    "44525FYTbGi",
+    "join",
+    "(((.+)+)+)+$",
+    ".ko-motives-dropbtn",
+    "gap",
+    "trim",
+    "Header\x20was\x20removed,\x20resetting\x20headerAdded\x20flag",
+  ];
+  M = function () {
+    return W5;
+  };
+  return M();
+}
+function t(p, q) {
+  const W = M();
+  t = function (R, K) {
+    R = R - (-0x138f * 0x1 + 0x1b2b + 0x64c * -0x1);
+    let j = W[R];
+    return j;
+  };
+  return t(p, q);
+}
+function w() {
   "use strict";
-  const HV = L;
-  let z = ![];
+  const pY = t;
+  let N = ![];
   let u = ![];
-  const w = {};
-  w["value"] = HV(0x273);
-  w["text"] = HV(0x273);
-  const t = {};
-  t[HV(0x30c)] = HV(0x224);
-  t[HV(0x235)] = HV(0x224);
-  const j = {};
-  j[HV(0x30c)] = "e-mail\x20OK";
-  j[HV(0x235)] = "e-mail\x20OK";
-  const D = {};
-  D[HV(0x30c)] = HV(0x206);
-  D["text"] = "mandat\x20KO";
-  const s = [w, t, j, D];
-  const A = {};
-  A[HV(0x30c)] = "A";
-  A[HV(0x235)] = HV(0x2f9);
-  const C = {};
-  C[HV(0x30c)] = "B";
-  C["text"] = HV(0x203);
-  const l = {};
-  l[HV(0x30c)] = "C";
-  l["text"] = HV(0x27e);
-  const p = {};
-  p[HV(0x30c)] = "D";
-  p[HV(0x235)] = HV(0x2b5);
-  const N = {};
-  N[HV(0x30c)] = "E";
-  N["text"] = "Mandat\x20non\x20signé";
-  const S = {};
-  S["value"] = "F";
-  S[HV(0x235)] = "Mandat\x20non\x20daté";
-  const V = {};
-  V[HV(0x30c)] = "G";
-  V[HV(0x235)] = HV(0x1ef);
-  const r = {};
-  r[HV(0x30c)] = "H";
-  r[HV(0x235)] =
-    "Mail\x20non\x20valable\x20:\x20absence\x20d\x27autorisation\x20explicite";
-  const Z = {};
-  Z[HV(0x30c)] = "I";
-  Z[HV(0x235)] = HV(0x2f7);
+  const s = {};
+  s["value"] = pY(0x1ff);
+  s[pY(0x1d8)] = pY(0x1ff);
   const Q = {};
-  Q[HV(0x30c)] = "J";
-  Q["text"] = HV(0x2de);
-  const G = {};
-  G[HV(0x30c)] = "L";
-  G["text"] = HV(0x1db);
+  Q[pY(0x22c)] = pY(0x231);
+  Q[pY(0x1d8)] = "mandat\x20OK";
+  const V = {};
+  V[pY(0x22c)] = pY(0x1e9);
+  V[pY(0x1d8)] = "e-mail\x20OK";
+  const m = {};
+  m[pY(0x22c)] = pY(0x209);
+  m[pY(0x1d8)] = pY(0x209);
+  const b = [s, Q, V, m];
+  const z = {};
+  z[pY(0x22c)] = "A";
+  z["text"] = pY(0x1e5);
+  const e = {};
+  e[pY(0x22c)] = "B";
+  e["text"] = pY(0x1d7);
+  const U = {};
+  U[pY(0x22c)] = "C";
+  U[pY(0x1d8)] = "Multisites\x20:\x20PCE\x20non\x20mentionnés";
+  const X = {};
+  X[pY(0x22c)] = "D";
+  X[pY(0x1d8)] = pY(0x160);
+  const l = {};
+  l["value"] = "E";
+  l["text"] = pY(0x250);
+  const Y = {};
+  Y[pY(0x22c)] = "F";
+  Y[pY(0x1d8)] = "Mandat\x20non\x20daté";
   const d = {};
-  d[HV(0x30c)] = "O";
-  d[HV(0x235)] = "Date\x20de\x20mandat\x20expiré";
-  const H0 = {};
-  H0[HV(0x30c)] = "P";
-  H0[HV(0x235)] = HV(0x1fc);
-  const H1 = {};
-  H1[HV(0x30c)] = "K";
-  H1[HV(0x235)] = HV(0x2fa);
-  const H2 = [A, C, l, p, N, S, V, r, Z, Q, G, d, H0, H1];
-  function H3() {
-    const Hr = HV;
-    const HX = document[Hr(0x27f)](Hr(0x218));
-    HX[Hr(0x2af)] = Hr(0x253);
-    document[Hr(0x29d)][Hr(0x29a)](HX);
+  d[pY(0x22c)] = "G";
+  d[pY(0x1d8)] = pY(0x1e2);
+  const A = {};
+  A[pY(0x22c)] = "H";
+  A[pY(0x1d8)] =
+    "Mail\x20non\x20valable\x20:\x20absence\x20d\x27autorisation\x20explicite";
+  const G = {};
+  G["value"] = "I";
+  G[pY(0x1d8)] = pY(0x1c1);
+  const F = {};
+  F[pY(0x22c)] = "J";
+  F[pY(0x1d8)] =
+    "Mail\x20non\x20valable\x20:\x20absence\x20de\x20signature\x20du\x20client\x20dans\x20le\x20mail";
+  const I = {};
+  I[pY(0x22c)] = "L";
+  I[pY(0x1d8)] = pY(0x1b8);
+  const k = {};
+  k[pY(0x22c)] = "O";
+  k[pY(0x1d8)] = pY(0x1f0);
+  const T = {};
+  T[pY(0x22c)] = "P";
+  T[pY(0x1d8)] = "Mandat\x20non\x20applicable\x20au\x20gaz";
+  const i = {};
+  i[pY(0x22c)] = "K";
+  i[pY(0x1d8)] = pY(0x171);
+  const H = [z, e, U, X, l, Y, d, A, G, F, I, k, T, i];
+  function p0() {
+    const pd = pY;
+    const pW = document[pd(0x1a1)](pd(0x159));
+    pW[pd(0x227)] = pd(0x185);
+    document[pd(0x24e)]["appendChild"](pW);
   }
-  function H4(HX) {
-    const HZ = HV;
-    const HW = [];
-    if (HX) {
-      H2[HZ(0x301)]((HI) => {
-        const HQ = HZ;
-        if (HX["includes"](HI[HQ(0x235)])) {
-          HW[HQ(0x2ee)](HI["value"]);
+  function p1(pW) {
+    const pA = pY;
+    const pR = [];
+    if (pW) {
+      H[pA(0x23c)]((pg) => {
+        const pG = pA;
+        if (pW["includes"](pg[pG(0x1d8)])) {
+          pR[pG(0x187)](pg[pG(0x22c)]);
         }
       });
     }
-    const HL = document[HZ(0x27f)](HZ(0x234));
-    HL[HZ(0x1f1)] = HZ(0x2f8);
-    const HJ = function (HI) {
-      const HG = HZ;
-      if (HI[HG(0x2f1)] && HI[HG(0x2f1)]["J"] === HL) {
-        HW[HG(0x217)] = 0x3 * 0x22d + 0x1075 + -0x2 * 0xb7e;
-        console["log"](HG(0x270));
+    const pK = document[pA(0x1a1)](pA(0x24d));
+    pK[pA(0x1e8)] = "ko-motives-dropdown";
+    const pj = function (pg) {
+      const pF = pA;
+      if (pg[pF(0x206)] && pg[pF(0x206)]["J"] === pK) {
+        pR[pF(0x162)] = 0x26a1 + -0x1 * -0x358 + 0x23 * -0x133;
+        console[pF(0x16c)](pF(0x22e));
       }
     };
-    document[HZ(0x249)](HZ(0x1ff), HJ);
-    HL[HZ(0x2d9)]["c"] = Date["now"]()["toString"]();
-    const Hc = document[HZ(0x27f)](HZ(0x2a3));
-    Hc["className"] = HZ(0x302);
-    if (HW[HZ(0x217)] > 0x17a8 + 0x1047 + -0x27ef) {
-      const HI = HW[HZ(0x1f5)]((HU) => {
-        const Hd = HZ;
-        const HY = H2[Hd(0x26c)]((HO) => HO[Hd(0x30c)] === HU);
-        return HY ? HY[Hd(0x235)] : "";
-      })[HZ(0x226)]((HU) => HU);
-      const HF = HI[HZ(0x26a)](",\x20");
-      const Hq = 0x108c + -0x2 * -0x117f + 0x9 * -0x5b5;
-      Hc[HZ(0x2af)] =
-        HF[HZ(0x217)] > Hq
-          ? HF["substring"](-0x2221 * 0x1 + 0x1eb3 + 0x36e * 0x1, Hq) + "..."
-          : HF;
-      Hc[HZ(0x261)] = HI[HZ(0x26a)](",\x20");
+    document["addEventListener"]("resetSelectedMotives", pj);
+    pK[pA(0x165)]["g"] = Date[pA(0x167)]()[pA(0x15a)]();
+    const pM = document["createElement"](pA(0x218));
+    pM["className"] = pA(0x1a8);
+    if (pR[pA(0x162)] > 0x12e * 0x2 + 0xa4c + -0x32a * 0x4) {
+      const pg = pR[pA(0x1ee)]((pO) => {
+        const pI = pA;
+        const pC = H["find"]((pS) => pS["value"] === pO);
+        return pC ? pC[pI(0x1d8)] : "";
+      })["filter"]((pO) => pO);
+      const pc = pg[pA(0x1ce)](",\x20");
+      const px = -0xc * -0x21d + 0x1 * 0xb81 + 0x24b0 * -0x1;
+      pM["textContent"] =
+        pc[pA(0x162)] > px
+          ? pc[pA(0x177)](-0x18da * -0x1 + -0x12ef + -0x5eb, px) + pA(0x180)
+          : pc;
+      pM[pA(0x245)] = pg[pA(0x1ce)](",\x20");
     } else {
-      Hc[HZ(0x2af)] = "Sélectionner\x20motifs";
+      pM["textContent"] = pA(0x20d);
     }
-    Hc[HZ(0x209)] = HZ(0x2a3);
-    HL[HZ(0x29a)](Hc);
-    const Hg = document[HZ(0x27f)](HZ(0x234));
-    Hg[HZ(0x1f1)] = HZ(0x2fb);
-    H2["forEach"]((HU) => {
-      const v0 = HZ;
-      const HY = document[v0(0x27f)](v0(0x21e));
-      const HO = document["createElement"](v0(0x24a));
-      HO[v0(0x209)] = v0(0x299);
-      HO["value"] = HU[v0(0x30c)];
-      HO[v0(0x2d9)][v0(0x235)] = HU[v0(0x235)];
-      if (HW[v0(0x2c6)](HU["value"])) {
-        HO[v0(0x276)] = !![];
+    pM[pA(0x1fc)] = pA(0x218);
+    pK[pA(0x154)](pM);
+    const pt = document[pA(0x1a1)](pA(0x24d));
+    pt["className"] = "ko-motives-dropdown-content";
+    H["forEach"]((pO) => {
+      const pk = pA;
+      const pC = document[pk(0x1a1)](pk(0x1ef));
+      const pS = document[pk(0x1a1)](pk(0x257));
+      pS[pk(0x1fc)] = "checkbox";
+      pS[pk(0x22c)] = pO[pk(0x22c)];
+      pS["dataset"][pk(0x1d8)] = pO[pk(0x1d8)];
+      if (pR["includes"](pO[pk(0x22c)])) {
+        pS["checked"] = !![];
       }
-      HO[v0(0x249)]("change", function () {
-        const v1 = v0;
-        if (HL[v1(0x2d9)]["g"] === v1(0x23f)) {
-          HL[v1(0x2d9)]["g"] = "false";
-          HW[v1(0x217)] = 0x1b53 + 0x21a6 + 0x3cf9 * -0x1;
+      pS[pk(0x1b1)]("change", function () {
+        const pT = pk;
+        if (pK["dataset"]["c"] === pT(0x207)) {
+          pK["dataset"]["c"] = pT(0x1b0);
+          pR[pT(0x162)] = -0x2 * -0x423 + 0x13 * 0x17f + -0x1 * 0x24b3;
         }
-        const HK = Hg["querySelectorAll"]("input[type=\x22checkbox\x22]");
-        const HM = [];
-        const Hf = [];
-        HK[v1(0x301)]((HR) => {
-          const v2 = v1;
-          if (HR[v2(0x276)]) {
-            HM[v2(0x2ee)](HR[v2(0x30c)]);
-            Hf[v2(0x2ee)](HR[v2(0x2d9)][v2(0x235)]);
+        const pE = pt["querySelectorAll"](pT(0x1df));
+        const pP = [];
+        const pB = [];
+        pE[pT(0x23c)]((pn) => {
+          const pi = pT;
+          if (pn[pi(0x1ba)]) {
+            pP["push"](pn[pi(0x22c)]);
+            pB[pi(0x187)](pn[pi(0x165)][pi(0x1d8)]);
           }
         });
-        if (Hf[v1(0x217)] > 0x1e22 + 0x3 * 0xbb3 + -0x413b) {
-          const HR = Hf[v1(0x26a)](",\x20");
-          const HT = 0x44b * -0x1 + -0x210c + 0x2584;
-          Hc[v1(0x2af)] =
-            HR[v1(0x217)] > HT
-              ? HR[v1(0x271)](-0x469 + 0x8b3 + -0x44a, HT) + "..."
-              : HR;
-          Hc[v1(0x261)] = Hf[v1(0x26a)](",\x20");
-          const HP =
-            HW[v1(0x217)] !== HM["length"] ||
-            HM[v1(0x1d1)]((Hi) => !HW["includes"](Hi));
-          if (HP) {
-            Hb[v1(0x218)][v1(0x2db)] = "block";
-            Hb[v1(0x2af)] = "Enregistrer";
-            Hb[v1(0x1d7)] = ![];
+        if (pB[pT(0x162)] > 0x23cf + 0xd3d + 0x2 * -0x1886) {
+          const pn = pB["join"](",\x20");
+          const py = 0x1410 + 0xd1e + 0x2101 * -0x1;
+          pM[pT(0x227)] =
+            pn[pT(0x162)] > py
+              ? pn[pT(0x177)](0x83 + -0x846 + 0x7c3, py) + pT(0x180)
+              : pn;
+          pM["title"] = pB[pT(0x1ce)](",\x20");
+          const ph =
+            pR[pT(0x162)] !== pP[pT(0x162)] ||
+            pP[pT(0x20e)]((pD) => !pR[pT(0x1f4)](pD));
+          if (ph) {
+            pJ["style"][pT(0x242)] = pT(0x192);
+            pJ[pT(0x227)] = "Enregistrer";
+            pJ[pT(0x19e)] = ![];
           } else {
-            Hb[v1(0x218)]["display"] = v1(0x1d6);
+            pJ[pT(0x159)][pT(0x242)] = pT(0x1da);
           }
         } else {
-          Hc[v1(0x2af)] = "Sélectionner\x20motifs";
-          Hc[v1(0x261)] = "";
-          if (HW[v1(0x217)] > 0x13d * 0xc + 0xb62 + -0x1a3e) {
-            Hb[v1(0x218)][v1(0x2db)] = v1(0x219);
-            Hb[v1(0x2af)] = v1(0x1ec);
-            Hb[v1(0x1d7)] = ![];
+          pM[pT(0x227)] = "Sélectionner\x20motifs";
+          pM[pT(0x245)] = "";
+          if (pR[pT(0x162)] > 0x2 * -0x116e + -0x132a + 0xa * 0x567) {
+            pJ[pT(0x159)][pT(0x242)] = pT(0x192);
+            pJ[pT(0x227)] = pT(0x1b3);
+            pJ[pT(0x19e)] = ![];
           } else {
-            Hb[v1(0x218)][v1(0x2db)] = v1(0x1d6);
+            pJ[pT(0x159)][pT(0x242)] = pT(0x1da);
           }
         }
-        console[v1(0x2b9)]("Selected\x20motives:", Hf);
+        console[pT(0x16c)](pT(0x221), pB);
       });
-      HY["appendChild"](HO);
-      HY["appendChild"](document["createTextNode"]("\x20" + HU[v0(0x235)]));
-      Hg[v0(0x29a)](HY);
+      pC[pk(0x154)](pS);
+      pC["appendChild"](document[pk(0x174)]("\x20" + pO[pk(0x1d8)]));
+      pt[pk(0x154)](pC);
     });
-    HL[HZ(0x29a)](Hg);
-    const Hb = document[HZ(0x27f)]("button");
-    Hb[HZ(0x1f1)] = "ko-motives-save-btn";
-    Hb["textContent"] = HZ(0x1ec);
-    Hb[HZ(0x209)] = "button";
-    Hb[HZ(0x218)][HZ(0x2db)] = HZ(0x1d6);
-    Hb[HZ(0x249)](HZ(0x259), function () {
-      const v3 = HZ;
-      const HU = Hg["querySelectorAll"]("input[type=\x22checkbox\x22]");
-      const HY = [];
-      HU[v3(0x301)]((Ho) => {
-        const v4 = v3;
-        if (Ho[v4(0x276)]) {
-          HY[v4(0x2ee)](Ho[v4(0x30c)]);
+    pK["appendChild"](pt);
+    const pJ = document[pA(0x1a1)](pA(0x218));
+    pJ["className"] = "ko-motives-save-btn";
+    pJ["textContent"] = pA(0x1b3);
+    pJ[pA(0x1fc)] = pA(0x218);
+    pJ[pA(0x159)][pA(0x242)] = pA(0x1da);
+    pJ[pA(0x1b1)](pA(0x17f), function () {
+      const pH = pA;
+      const pO = pt["querySelectorAll"](pH(0x1df));
+      const pC = [];
+      pO[pH(0x23c)]((pa) => {
+        const q0 = pH;
+        if (pa[q0(0x1ba)]) {
+          pC[q0(0x187)](pa[q0(0x22c)]);
         }
       });
-      const HO = HL[v3(0x2e9)]("tr");
-      if (!HO) {
-        alert(v3(0x2c3));
+      const pS = pK[pH(0x1ed)]("tr");
+      if (!pS) {
+        alert(pH(0x20f));
         return;
       }
-      const HK = HO[v3(0x307)](v3(0x21c));
-      if (!HK || !HK["href"]) {
-        alert(v3(0x274));
+      const pE = pS["querySelector"](pH(0x178));
+      if (!pE || !pE[pH(0x1f1)]) {
+        alert("Could\x20not\x20find\x20the\x20site\x20URL!");
         return;
       }
-      const HM = HK["href"];
-      const Hf = HM[v3(0x233)](/\/opportunite\/([^\/]+)\/site/);
-      if (!Hf || !Hf[-0xf * 0x216 + -0x2f7 * 0x1 + 0x1 * 0x2242]) {
-        alert(v3(0x24d) + HM);
+      const pP = pE[pH(0x1f1)];
+      const pB = pP["match"](/\/opportunite\/([^\/]+)\/site/);
+      if (!pB || !pB[-0x26f + -0x1f3c + 0x5 * 0x6bc]) {
+        alert(pH(0x1b4) + pP);
         return;
       }
-      const HR = Hf[0x2f * 0x3 + 0x32 * -0x52 + -0xf * -0x108];
-      const HT = v3(0x223) + HR + "/statut_mandat";
-      let HP = new URLSearchParams();
-      HP[v3(0x2e8)]("statut_mandat_pfo", v3(0x206));
-      HY[v3(0x301)]((Ho) => {
-        const v5 = v3;
-        HP[v5(0x2e8)](v5(0x2c9), Ho);
+      const pn = pB[-0x24f4 + -0x7f7 * 0x1 + 0x2cec];
+      const py = pH(0x256) + pn + "/statut_mandat";
+      let ph = new URLSearchParams();
+      ph[pH(0x19b)]("statut_mandat_pfo", pH(0x209));
+      pC["forEach"]((pa) => {
+        const q1 = pH;
+        ph[q1(0x19b)](q1(0x22b), pa);
       });
-      HP[v3(0x2e8)]("motif_ko_autre", "");
-      console[v3(0x2b9)](v3(0x2ad), HT);
-      console[v3(0x2b9)](v3(0x293), HP[v3(0x1f0)]());
-      Hb["textContent"] = v3(0x310);
-      Hb[v3(0x1d7)] = !![];
-      const Hi = document[v3(0x307)]("#uc2m_token2")?.["value"] || "";
+      ph["append"](pH(0x258), "");
+      console[pH(0x16c)](pH(0x24b), py);
+      console[pH(0x16c)](pH(0x251), ph[pH(0x15a)]());
+      pJ[pH(0x227)] = pH(0x183);
+      pJ[pH(0x19e)] = !![];
+      const pD = document[pH(0x226)]("#uc2m_token2")?.["value"] || "";
       try {
-        const Ho = new Headers();
-        Ho[v3(0x2e8)](v3(0x1dd), v3(0x2ab));
-        Ho[v3(0x2e8)](v3(0x2ae), v3(0x205));
-        Ho[v3(0x2e8)](v3(0x2a5), Hi);
-        const Hn = {
-          method: v3(0x2e4),
-          headers: Ho,
-          body: HP[v3(0x1f0)](),
-          credentials: v3(0x200),
-          mode: "cors",
+        const pa = new Headers();
+        pa[pH(0x19b)](pH(0x193), pH(0x1dd));
+        pa[pH(0x19b)](pH(0x246), pH(0x1f3));
+        pa["append"]("X-CSRF-TOKEN", pD);
+        const pf = {
+          method: pH(0x199),
+          headers: pa,
+          body: ph[pH(0x15a)](),
+          credentials: "include",
+          mode: pH(0x1a5),
         };
-        const Ha =
-          typeof unsafeWindow !== v3(0x243)
-            ? unsafeWindow["fetch"](HT, Hn)
-            : window[v3(0x279)](HT, Hn);
-        Ha["then"]((Hk) => {
-          const v6 = v3;
-          console[v6(0x2b9)](
+        const po =
+          typeof unsafeWindow !== "undefined"
+            ? unsafeWindow[pH(0x1e6)](py, pf)
+            : window[pH(0x1e6)](py, pf);
+        po[pH(0x188)]((pL) => {
+          const q2 = pH;
+          console[q2(0x16c)](
             "Response\x20status:",
-            Hk[v6(0x311)],
-            Hk[v6(0x1e2)]
+            pL[q2(0x223)],
+            pL["statusText"]
           );
-          return Hk[v6(0x235)]()[v6(0x288)]((Hu) => {
-            const v7 = v6;
-            console["log"](v7(0x2ba), Hu);
+          return pL[q2(0x1d8)]()["then"]((pr) => {
+            const q3 = q2;
+            console[q3(0x16c)](q3(0x17a), pr);
             try {
               return {
-                ok: Hk["ok"],
-                status: Hk[v7(0x311)],
-                data: Hu[v7(0x1e9)]("{") ? JSON[v7(0x285)](Hu) : Hu,
+                ok: pL["ok"],
+                status: pL[q3(0x223)],
+                data: pr[q3(0x21e)]("{") ? JSON[q3(0x16a)](pr) : pr,
               };
-            } catch (Hx) {
-              const HB = {};
-              HB["ok"] = Hk["ok"];
-              HB[v7(0x311)] = Hk[v7(0x311)];
-              HB[v7(0x262)] = Hu;
-              return HB;
+            } catch (pN) {
+              const pu = {};
+              pu["ok"] = pL["ok"];
+              pu[q3(0x223)] = pL["status"];
+              pu["data"] = pr;
+              return pu;
             }
           });
         })
-          [v3(0x288)]((Hk) => {
-            const v8 = v3;
-            console[v8(0x2b9)](v8(0x2b7), Hk);
-            if (Hk["ok"]) {
-              Hb["textContent"] = v8(0x1d8);
+          ["then"]((pL) => {
+            const q7 = pH;
+            console["log"]("Processed\x20result:", pL);
+            if (pL["ok"]) {
+              pJ["textContent"] = "Success!";
               setTimeout(function () {
-                const v9 = v8;
-                Hb["style"][v9(0x2db)] = v9(0x1d6);
-                Hb[v9(0x1d7)] = ![];
-                Hg[v9(0x317)][v9(0x2f3)](v9(0x29b));
-                const Hu = HL[v9(0x2e9)]("tr");
-                if (Hu) {
-                  const HB = Hg[v9(0x272)](v9(0x1d5));
-                  if (HB[v9(0x217)] > -0xdb1 * -0x1 + 0x79 * 0x1f + -0x1c58) {
-                    const Hm = Hu[v9(0x307)](v9(0x1ed));
-                    if (Hm) {
-                      const He = Hm[v9(0x307)](".statut-mandat-dropdown");
-                      if (He) {
-                        const Hw = He[v9(0x307)](v9(0x1dc));
-                        if (Hw && !Hw[v9(0x276)]) {
-                          Hw[v9(0x276)] = !![];
-                          const Ht = He[v9(0x307)](v9(0x23d));
-                          if (Ht) {
-                            const HD = s["find"](
-                              (Hs) => Hs["value"] === v9(0x206)
+                const q4 = t;
+                pJ[q4(0x159)][q4(0x242)] = q4(0x1da);
+                pJ[q4(0x19e)] = ![];
+                pt[q4(0x21f)][q4(0x1a6)](q4(0x1a7));
+                const pr = pK[q4(0x1ed)]("tr");
+                if (pr) {
+                  const pu = pt[q4(0x1fa)](q4(0x20b));
+                  if (pu[q4(0x162)] > -0x2 * -0x3d9 + 0xf32 + -0x16e4) {
+                    const pw = pr[q4(0x226)]("td:nth-of-type(9)");
+                    if (pw) {
+                      const pv = pw["querySelector"](".statut-mandat-dropdown");
+                      if (pv) {
+                        const pZ = pv["querySelector"](q4(0x1d6));
+                        if (pZ && !pZ[q4(0x1ba)]) {
+                          pZ[q4(0x1ba)] = !![];
+                          const ps = pv["querySelector"](q4(0x1bf));
+                          if (ps) {
+                            const pV = b[q4(0x161)](
+                              (pm) => pm["value"] === q4(0x209)
                             );
-                            if (HD) {
-                              Ht[v9(0x2af)] = HD[v9(0x235)];
-                              Ht["title"] = HD[v9(0x235)];
-                              console[v9(0x2b9)](v9(0x2c1));
-                              const Hs = He[v9(0x307)](
+                            if (pV) {
+                              ps[q4(0x227)] = pV[q4(0x1d8)];
+                              ps[q4(0x245)] = pV[q4(0x1d8)];
+                              console["log"](q4(0x252));
+                              const pm = pv[q4(0x226)](
                                 ".statut-mandat-save-btn"
                               );
-                              if (Hs) {
-                                Hs[v9(0x218)][v9(0x2db)] = v9(0x219);
-                                Hs[v9(0x2af)] = v9(0x1ec);
-                                Hs["disabled"] = ![];
+                              if (pm) {
+                                pm[q4(0x159)][q4(0x242)] = q4(0x192);
+                                pm[q4(0x227)] = q4(0x1b3);
+                                pm["disabled"] = ![];
                               }
                             }
                           }
-                          He[v9(0x2d9)]["b"] = v9(0x206);
-                          let Hj = Hu[v9(0x307)](v9(0x26e));
-                          if (Hj && Hj["textContent"][v9(0x2c6)]("Relancer")) {
-                            Hj[v9(0x218)][v9(0x2db)] = "";
+                          pv[q4(0x165)]["x"] = "mandat\x20KO";
+                          let pQ = pr[q4(0x226)](q4(0x1dc));
+                          if (pQ && pQ[q4(0x227)][q4(0x1f4)](q4(0x21b))) {
+                            pQ["style"][q4(0x242)] = "";
                           }
                         }
                       }
                     }
                   }
                 }
-                const Hx = Hu[v9(0x307)]("td:nth-of-type(10)");
-                if (Hx) {
-                  const HA = [];
-                  const HC = Hg["querySelectorAll"](v9(0x202));
-                  HC[v9(0x301)]((Hl) => {
-                    const vH = v9;
-                    if (Hl[vH(0x276)]) {
-                      const Hp = H2[vH(0x26c)](
-                        (HN) => HN[vH(0x30c)] === Hl[vH(0x30c)]
+                const pN = pr[q4(0x226)](q4(0x1c2));
+                if (pN) {
+                  const pb = [];
+                  const pz = pt[q4(0x1fa)](q4(0x1df));
+                  pz[q4(0x23c)]((pe) => {
+                    const q5 = q4;
+                    if (pe[q5(0x1ba)]) {
+                      const pU = H["find"](
+                        (pX) => pX["value"] === pe[q5(0x22c)]
                       );
-                      if (Hp) {
-                        HA[vH(0x2ee)](Hp[vH(0x235)]);
+                      if (pU) {
+                        pb[q5(0x187)](pU[q5(0x1d8)]);
                       }
                     }
                   });
-                  Hx[v9(0x2d9)]["I"] = HA[v9(0x26a)](",\x20");
-                  HL[v9(0x2d9)]["g"] = v9(0x27a);
-                  HW[v9(0x217)] = -0x87 + 0x2b8 + -0x231;
-                  HC[v9(0x301)]((Hl) => {
-                    const vv = v9;
-                    if (Hl["checked"]) {
-                      HW[vv(0x2ee)](Hl[vv(0x30c)]);
+                  pN[q4(0x165)]["O"] = pb[q4(0x1ce)](",\x20");
+                  pK["dataset"]["c"] = q4(0x1b0);
+                  pR[q4(0x162)] = 0xb6e + 0xd68 + 0x176 * -0x11;
+                  pz["forEach"]((pe) => {
+                    const q6 = q4;
+                    if (pe[q6(0x1ba)]) {
+                      pR["push"](pe[q6(0x22c)]);
                     }
                   });
-                  console["log"](v9(0x1fa), HW);
+                  console[q4(0x16c)](
+                    "Updated\x20selectedMotives\x20array\x20after\x20save:",
+                    pR
+                  );
                 }
-              }, -0x1 * 0x106c + 0xa * 0x33d + -0xa1a);
+              }, -0x1 * -0x575 + 0x1411 + -0x13aa);
             } else {
-              Hb[v8(0x2af)] = "Error!";
-              console["error"](
-                "Failed\x20to\x20save\x20KO\x20motives:",
-                Hk[v8(0x311)]
-              );
-              if (
-                typeof Hk[v8(0x262)] === v8(0x1f2) &&
-                Hk[v8(0x262)]["message"]
-              ) {
-                alert(v8(0x282) + Hk["data"]["message"]);
-              } else if (Hk[v8(0x262)][v8(0x2c6)](v8(0x287))) {
-                alert(v8(0x1fb));
+              pJ[q7(0x227)] = q7(0x1ae);
+              console[q7(0x220)](q7(0x229), pL[q7(0x223)]);
+              if (typeof pL["data"] === q7(0x1fb) && pL[q7(0x197)][q7(0x21a)]) {
+                alert(q7(0x200) + pL[q7(0x197)]["message"]);
+              } else if (pL[q7(0x197)][q7(0x1f4)]("<html")) {
+                alert(q7(0x169));
               } else {
-                alert(v8(0x28b));
+                alert(q7(0x1f7));
               }
               setTimeout(function () {
-                const vy = v8;
-                Hb[vy(0x2af)] = "Enregistrer";
-                Hb[vy(0x1d7)] = ![];
-              }, -0xcd3 + 0xdaa + 0x101 * 0x5);
+                const q8 = q7;
+                pJ[q8(0x227)] = q8(0x1b3);
+                pJ[q8(0x19e)] = ![];
+              }, 0x22ee + 0x1 * 0x1297 + -0x2fa9);
             }
           })
-          [v3(0x29e)]((Hk) => {
-            const vh = v3;
-            Hb["textContent"] = "Error!";
-            console[vh(0x314)]("Failed\x20to\x20save\x20KO\x20motives:", Hk);
-            alert(vh(0x2cd));
+          [pH(0x191)]((pL) => {
+            const q9 = pH;
+            pJ[q9(0x227)] = q9(0x1ae);
+            console[q9(0x220)](q9(0x229), pL);
+            alert(q9(0x176));
             setTimeout(function () {
-              const vE = vh;
-              Hb["textContent"] = vE(0x1ec);
-              Hb[vE(0x1d7)] = ![];
-            }, 0x854 + 0x8af + -0x5 * 0x23b);
+              const qp = q9;
+              pJ[qp(0x227)] = "Enregistrer";
+              pJ["disabled"] = ![];
+            }, -0x206 * -0xa + -0x2094 + 0x1234);
           });
-      } catch (Hk) {
-        console[v3(0x314)](v3(0x295), Hk);
-        Hb["textContent"] = "Error!";
-        alert(v3(0x2da) + Hk[v3(0x220)]);
+      } catch (pL) {
+        console[pH(0x220)]("Error\x20setting\x20up\x20fetch\x20request:", pL);
+        pJ[pH(0x227)] = pH(0x1ae);
+        alert(pH(0x224) + pL["message"]);
         setTimeout(function () {
-          const vX = v3;
-          Hb["textContent"] = "Enregistrer";
-          Hb[vX(0x1d7)] = ![];
-        }, -0xd7f + -0x171 * 0x1 + 0x14cc);
+          const qq = pH;
+          pJ[qq(0x227)] = qq(0x1b3);
+          pJ["disabled"] = ![];
+        }, -0xb11 * -0x1 + -0x21e4 + 0x1caf);
       }
     });
-    HL[HZ(0x29a)](Hb);
-    Hc[HZ(0x249)](HZ(0x259), function (HU) {
-      const vW = HZ;
-      HU[vW(0x23c)]();
-      Hg[vW(0x317)][vW(0x1f4)](vW(0x29b));
+    pK[pA(0x154)](pJ);
+    pM["addEventListener"](pA(0x17f), function (pO) {
+      const qW = pA;
+      pO[qW(0x1b9)]();
+      pt["classList"][qW(0x155)](qW(0x1a7));
     });
-    document[HZ(0x249)](HZ(0x259), function (HU) {
-      const vL = HZ;
-      if (!HL["contains"](HU["target"])) {
-        Hg[vL(0x317)][vL(0x2f3)](vL(0x29b));
+    document["addEventListener"](pA(0x17f), function (pO) {
+      const qR = pA;
+      if (!pK["contains"](pO[qR(0x1e0)])) {
+        pt[qR(0x21f)][qR(0x1a6)](qR(0x1a7));
       }
     });
-    return HL;
+    return pK;
   }
-  function H5(HX) {
-    const vJ = HV;
-    const HW = document[vJ(0x27f)](vJ(0x234));
-    HW[vJ(0x1f1)] = vJ(0x290);
-    HW[vJ(0x2d9)]["b"] = HX;
-    const HL = document[vJ(0x27f)](vJ(0x2a3));
-    HL[vJ(0x1f1)] = vJ(0x1df);
-    const HJ = s[vJ(0x26c)]((HI) => HI[vJ(0x30c)] === HX);
-    const Hc = HJ ? HJ[vJ(0x235)] : HX;
-    HL[vJ(0x2af)] = Hc || "Sélectionner\x20statut";
-    HL[vJ(0x261)] = Hc || "";
-    HL[vJ(0x209)] = "button";
-    HW["appendChild"](HL);
-    const Hg = document[vJ(0x27f)](vJ(0x234));
-    Hg[vJ(0x1f1)] = vJ(0x238);
-    s[vJ(0x301)]((HI) => {
-      const vc = vJ;
-      const HF = document["createElement"](vc(0x21e));
-      const Hq = document[vc(0x27f)]("input");
-      Hq[vc(0x209)] = vc(0x22d);
-      Hq["name"] = "statut-mandat";
-      Hq[vc(0x30c)] = HI[vc(0x30c)];
-      Hq[vc(0x2d9)][vc(0x235)] = HI[vc(0x235)];
+  function p2(pW) {
+    const qK = pY;
+    const pR = document[qK(0x1a1)]("div");
+    pR[qK(0x1e8)] = qK(0x1fe);
+    pR[qK(0x165)]["x"] = pW;
+    const pK = document["createElement"](qK(0x218));
+    pK[qK(0x1e8)] = qK(0x253);
+    const pj = b[qK(0x161)]((pg) => pg[qK(0x22c)] === pW);
+    const pM = pj ? pj["text"] : pW;
+    pK[qK(0x227)] = pM || qK(0x24a);
+    pK[qK(0x245)] = pM || "";
+    pK[qK(0x1fc)] = "button";
+    pR[qK(0x154)](pK);
+    const pt = document[qK(0x1a1)]("div");
+    pt[qK(0x1e8)] = "statut-mandat-dropdown-content";
+    b[qK(0x23c)]((pg) => {
+      const qj = qK;
+      const pc = document["createElement"](qj(0x1ef));
+      const px = document[qj(0x1a1)](qj(0x257));
+      px[qj(0x1fc)] = qj(0x255);
+      px[qj(0x1f9)] = "statut-mandat";
+      px[qj(0x22c)] = pg[qj(0x22c)];
+      px[qj(0x165)][qj(0x1d8)] = pg["text"];
       if (
-        HX &&
-        (HX[vc(0x275)]() === HI[vc(0x30c)][vc(0x275)]() ||
-          HX["toLowerCase"]() === HI[vc(0x235)]["toLowerCase"]())
+        pW &&
+        (pW["toLowerCase"]() === pg[qj(0x22c)]["toLowerCase"]() ||
+          pW[qj(0x198)]() === pg["text"][qj(0x198)]())
       ) {
-        Hq[vc(0x276)] = !![];
+        px[qj(0x1ba)] = !![];
       }
-      Hq[vc(0x249)](vc(0x316), function () {
-        const vg = vc;
-        if (this[vg(0x276)]) {
-          HL[vg(0x2af)] = this[vg(0x2d9)][vg(0x235)];
-          HL[vg(0x261)] = this["dataset"]["text"];
-          if (HX !== this["value"]) {
-            Hb["style"][vg(0x2db)] = vg(0x219);
-            Hb[vg(0x2af)] = "Enregistrer";
-            Hb[vg(0x1d7)] = ![];
+      px[qj(0x1b1)]("change", function () {
+        const qM = qj;
+        if (this[qM(0x1ba)]) {
+          pK[qM(0x227)] = this[qM(0x165)][qM(0x1d8)];
+          pK[qM(0x245)] = this[qM(0x165)][qM(0x1d8)];
+          if (pW !== this["value"]) {
+            pJ["style"][qM(0x242)] = "block";
+            pJ[qM(0x227)] = qM(0x1b3);
+            pJ["disabled"] = ![];
           } else {
-            Hb[vg(0x218)][vg(0x2db)] = vg(0x1d6);
+            pJ[qM(0x159)]["display"] = "none";
           }
         }
       });
-      HF[vc(0x29a)](Hq);
-      HF[vc(0x29a)](document["createTextNode"]("\x20" + HI[vc(0x235)]));
-      Hg[vc(0x29a)](HF);
+      pc[qj(0x154)](px);
+      pc["appendChild"](document["createTextNode"]("\x20" + pg[qj(0x1d8)]));
+      pt[qj(0x154)](pc);
     });
-    HW[vJ(0x29a)](Hg);
-    const Hb = document[vJ(0x27f)]("button");
-    Hb[vJ(0x1f1)] = vJ(0x229);
-    Hb[vJ(0x2af)] = "Enregistrer";
-    Hb[vJ(0x209)] = "button";
-    Hb[vJ(0x218)][vJ(0x2db)] = vJ(0x1d6);
-    Hb["addEventListener"](vJ(0x259), function () {
-      const vb = vJ;
-      const HI = Hg[vb(0x307)](vb(0x286));
-      if (!HI) {
-        alert(vb(0x239));
+    pR[qK(0x154)](pt);
+    const pJ = document[qK(0x1a1)]("button");
+    pJ["className"] = "statut-mandat-save-btn";
+    pJ[qK(0x227)] = qK(0x1b3);
+    pJ[qK(0x1fc)] = "button";
+    pJ[qK(0x159)]["display"] = "none";
+    pJ[qK(0x1b1)](qK(0x17f), function () {
+      const qt = qK;
+      const pg = pt[qt(0x226)](qt(0x1c7));
+      if (!pg) {
+        alert(qt(0x151));
         return;
       }
-      const HF = HW[vb(0x2e9)]("tr");
-      if (!HF) {
-        alert(vb(0x2c3));
+      const pc = pR["closest"]("tr");
+      if (!pc) {
+        alert(qt(0x20f));
         return;
       }
-      const Hq = HF[vb(0x307)]("td:nth-of-type(6)\x20a");
-      if (!Hq || !Hq[vb(0x24b)]) {
-        alert(vb(0x274));
+      const px = pc[qt(0x226)](qt(0x178));
+      if (!px || !px[qt(0x1f1)]) {
+        alert(qt(0x1ca));
         return;
       }
-      const HU = Hq[vb(0x24b)];
-      const HY = HU[vb(0x233)](/\/opportunite\/([^\/]+)\/site/);
-      if (!HY || !HY[-0x2531 + -0xa4 + 0x25d6]) {
-        alert(
-          "Could\x20not\x20extract\x20opportunity\x20ID\x20from\x20the\x20URL:\x20" +
-            HU
-        );
+      const pO = px[qt(0x1f1)];
+      const pC = pO[qt(0x196)](/\/opportunite\/([^\/]+)\/site/);
+      if (!pC || !pC[0x1 * 0x227c + 0x1e5b + -0x56 * 0xc1]) {
+        alert(qt(0x1b4) + pO);
         return;
       }
-      const HO = HY[0x2 * -0x10db + -0x3cd * 0x8 + 0x401f];
-      const HK = "https://watt-else.pro/opportunite/" + HO + "/statut_mandat";
-      let HM = new URLSearchParams();
-      HM["append"](vb(0x28e), HI[vb(0x30c)]);
-      if (HI["value"] === vb(0x206)) {
-        const HR = HF[vb(0x307)](vb(0x236));
-        if (HR) {
-          const HT = HR[vb(0x307)](vb(0x212));
-          if (HT) {
-            const HP = HT[vb(0x272)](vb(0x1d5));
-            HP[vb(0x301)]((Hi) => {
-              const vI = vb;
-              HM[vI(0x2e8)](vI(0x2c9), Hi[vI(0x30c)]);
+      const pS = pC[-0x22d + -0x1064 + -0x2 * -0x949];
+      const pE = qt(0x256) + pS + qt(0x1f6);
+      let pP = new URLSearchParams();
+      pP[qt(0x19b)](qt(0x1a4), pg[qt(0x22c)]);
+      if (pg["value"] === qt(0x209)) {
+        const pn = pc[qt(0x226)](qt(0x1c2));
+        if (pn) {
+          const py = pn["querySelector"](qt(0x1c8));
+          if (py) {
+            const ph = py[qt(0x1fa)]("input[type=\x22checkbox\x22]:checked");
+            ph[qt(0x23c)]((pD) => {
+              const qJ = qt;
+              pP[qJ(0x19b)](qJ(0x22b), pD[qJ(0x22c)]);
             });
           }
         }
       } else {
-        HM["append"](vb(0x2c9), "");
+        pP["append"](qt(0x22b), "");
       }
-      HM[vb(0x2e8)](vb(0x2d4), "");
-      console["log"](vb(0x2ad), HK);
-      console[vb(0x2b9)]("With\x20payload:", HM[vb(0x1f0)]());
-      Hb[vb(0x2af)] = vb(0x310);
-      Hb[vb(0x1d7)] = !![];
-      const Hf = document[vb(0x307)](vb(0x2e2))?.[vb(0x30c)] || "";
+      pP[qt(0x19b)]("motif_ko_autre", "");
+      console[qt(0x16c)]("Making\x20request\x20to:", pE);
+      console["log"](qt(0x251), pP[qt(0x15a)]());
+      pJ[qt(0x227)] = qt(0x183);
+      pJ[qt(0x19e)] = !![];
+      const pB = document[qt(0x226)](qt(0x1e7))?.[qt(0x22c)] || "";
       try {
-        const Hi = new Headers();
-        Hi[vb(0x2e8)](vb(0x1dd), vb(0x2ab));
-        Hi[vb(0x2e8)](vb(0x2ae), vb(0x205));
-        Hi[vb(0x2e8)](vb(0x2a5), Hf);
-        const Ho = {
-          method: "POST",
-          headers: Hi,
-          body: HM[vb(0x1f0)](),
-          credentials: vb(0x200),
-          mode: vb(0x2cf),
+        const pD = new Headers();
+        pD[qt(0x19b)](qt(0x193), qt(0x1dd));
+        pD[qt(0x19b)]("X-Requested-With", qt(0x1f3));
+        pD[qt(0x19b)]("X-CSRF-TOKEN", pB);
+        const pa = {
+          method: qt(0x199),
+          headers: pD,
+          body: pP[qt(0x15a)](),
+          credentials: qt(0x189),
+          mode: qt(0x1a5),
         };
-        const Hn =
-          typeof unsafeWindow !== vb(0x243)
-            ? unsafeWindow[vb(0x279)](HK, Ho)
-            : window[vb(0x279)](HK, Ho);
-        Hn[vb(0x288)]((Ha) => {
-          const vF = vb;
-          console["log"]("Response\x20status:", Ha[vF(0x311)], Ha[vF(0x1e2)]);
-          return Ha[vF(0x235)]()[vF(0x288)]((Hk) => {
-            const vq = vF;
-            console[vq(0x2b9)](vq(0x2ba), Hk);
+        const pf =
+          typeof unsafeWindow !== qt(0x203)
+            ? unsafeWindow[qt(0x1e6)](pE, pa)
+            : window[qt(0x1e6)](pE, pa);
+        pf[qt(0x188)]((po) => {
+          const qg = qt;
+          console[qg(0x16c)](
+            "Response\x20status:",
+            po[qg(0x223)],
+            po["statusText"]
+          );
+          return po[qg(0x1d8)]()[qg(0x188)]((pL) => {
+            const qc = qg;
+            console[qc(0x16c)](qc(0x17a), pL);
             try {
               return {
-                ok: Ha["ok"],
-                status: Ha[vq(0x311)],
-                data: Hk["startsWith"]("{") ? JSON["parse"](Hk) : Hk,
+                ok: po["ok"],
+                status: po[qc(0x223)],
+                data: pL["startsWith"]("{") ? JSON[qc(0x16a)](pL) : pL,
               };
-            } catch (Hu) {
-              const Hx = {};
-              Hx["ok"] = Ha["ok"];
-              Hx[vq(0x311)] = Ha[vq(0x311)];
-              Hx[vq(0x262)] = Hk;
-              return Hx;
+            } catch (pr) {
+              const pN = {};
+              pN["ok"] = po["ok"];
+              pN[qc(0x223)] = po[qc(0x223)];
+              pN[qc(0x197)] = pL;
+              return pN;
             }
           });
         })
-          [vb(0x288)]((Ha) => {
-            const vU = vb;
-            console["log"]("Processed\x20result:", Ha);
-            if (Ha["ok"]) {
-              Hb[vU(0x2af)] = "Success!";
+          [qt(0x188)]((po) => {
+            const qx = qt;
+            console[qx(0x16c)](qx(0x230), po);
+            if (po["ok"]) {
+              pJ[qx(0x227)] = qx(0x184);
               setTimeout(function () {
-                const vY = vU;
-                Hb[vY(0x218)]["display"] = "none";
-                Hb["disabled"] = ![];
-                Hg["classList"]["remove"](vY(0x29b));
-                const Hk = HF[vY(0x307)](vY(0x1ed));
-                if (Hk) {
-                  HX = HI[vY(0x30c)];
-                  const Hu = Hk["querySelector"](vY(0x313));
-                  if (Hu) {
-                    Hu[vY(0x2d9)]["b"] = HX;
+                const qO = qx;
+                pJ[qO(0x159)][qO(0x242)] = qO(0x1da);
+                pJ[qO(0x19e)] = ![];
+                pt["classList"]["remove"]("show");
+                const pL = pc[qO(0x226)](qO(0x21d));
+                if (pL) {
+                  pW = pg["value"];
+                  const pr = pL[qO(0x226)](qO(0x222));
+                  if (pr) {
+                    pr[qO(0x165)]["x"] = pW;
                   }
-                  if (HX === vY(0x206)) {
-                    console["log"](vY(0x2b4));
-                  } else if (HX !== "mandat\x20KO") {
-                    const Hx = HF[vY(0x307)](vY(0x248));
-                    if (Hx && Hx[vY(0x2af)][vY(0x2c6)]("Relancer")) {
-                      Hx[vY(0x218)][vY(0x2db)] = vY(0x1d6);
+                  if (pW === qO(0x209)) {
+                    console[qO(0x16c)](qO(0x18c));
+                  } else if (pW !== qO(0x209)) {
+                    const pN = pc["querySelector"](qO(0x195));
+                    if (pN && pN[qO(0x227)][qO(0x1f4)]("Relancer")) {
+                      pN["style"]["display"] = qO(0x1da);
                     }
-                    const HB = HF[vY(0x307)](vY(0x236));
-                    if (HB) {
-                      const Hm = HB[vY(0x307)](vY(0x212));
-                      if (Hm) {
-                        const He = Hm[vY(0x272)](
-                          "input[type=\x22checkbox\x22]:checked"
-                        );
+                    const pu = pc[qO(0x226)]("td:nth-of-type(10)");
+                    if (pu) {
+                      const pw = pu[qO(0x226)](qO(0x1c8));
+                      if (pw) {
+                        const pv = pw["querySelectorAll"](qO(0x20b));
                         if (
-                          He[vY(0x217)] >
-                          -0x16d6 * 0x1 + 0x1 * 0x157d + 0x159
+                          pv[qO(0x162)] >
+                          -0x1346 * 0x1 + -0x2145 + -0x1 * -0x348b
                         ) {
-                          He["forEach"]((Hs) => {
-                            const vO = vY;
-                            Hs[vO(0x276)] = ![];
+                          pv[qO(0x23c)]((pm) => {
+                            const qC = qO;
+                            pm[qC(0x1ba)] = ![];
                           });
-                          const Hw = Hm[vY(0x307)](vY(0x1de));
-                          if (Hw) {
-                            Hw[vY(0x2af)] = vY(0x2e3);
-                            Hw["title"] = "";
+                          const pZ = pw[qO(0x226)](qO(0x1d0));
+                          if (pZ) {
+                            pZ["textContent"] = qO(0x20d);
+                            pZ[qO(0x245)] = "";
                           }
-                          const Ht = {};
-                          Ht["J"] = Hm;
-                          const Hj = {};
-                          Hj[vY(0x2f1)] = Ht;
-                          const HD = new CustomEvent(vY(0x1ff), Hj);
-                          document[vY(0x2e1)](HD);
-                          Hm[vY(0x2d9)]["g"] = vY(0x23f);
+                          const ps = {};
+                          ps["J"] = pw;
+                          const pQ = {};
+                          pQ[qO(0x206)] = ps;
+                          const pV = new CustomEvent(
+                            "resetSelectedMotives",
+                            pQ
+                          );
+                          document["dispatchEvent"](pV);
+                          pw["dataset"]["c"] = qO(0x207);
                         }
                       }
                     }
                   }
                 }
-              }, 0x96a * 0x4 + 0x1ff9 + -0x3fc5);
+              }, -0xd81 + 0xa * -0xb3 + 0x1a5b);
             } else {
-              Hb["textContent"] = "Error!";
-              console[vU(0x314)](vU(0x30e), Ha[vU(0x311)]);
+              pJ[qx(0x227)] = "Error!";
+              console[qx(0x220)](qx(0x205), po[qx(0x223)]);
               if (
-                typeof Ha[vU(0x262)] === vU(0x1f2) &&
-                Ha[vU(0x262)][vU(0x220)]
+                typeof po[qx(0x197)] === "object" &&
+                po[qx(0x197)]["message"]
               ) {
-                alert(vU(0x1ee) + Ha[vU(0x262)]["message"]);
-              } else if (Ha[vU(0x262)][vU(0x2c6)]("<html")) {
-                alert(vU(0x1fb));
+                alert(qx(0x239) + po[qx(0x197)][qx(0x21a)]);
+              } else if (po[qx(0x197)]["includes"](qx(0x204))) {
+                alert(qx(0x169));
               } else {
-                alert(vU(0x260));
+                alert(qx(0x1b6));
               }
               setTimeout(function () {
-                const vK = vU;
-                Hb[vK(0x2af)] = "Enregistrer";
-                Hb[vK(0x1d7)] = ![];
-              }, 0x37 * 0x9 + -0x22a5 + 0x2692);
+                const qS = qx;
+                pJ[qS(0x227)] = qS(0x1b3);
+                pJ["disabled"] = ![];
+              }, 0x7b7 + -0x10f2 * 0x1 + -0xf17 * -0x1);
             }
           })
-          [vb(0x29e)]((Ha) => {
-            const vM = vb;
-            Hb[vM(0x2af)] = "Error!";
-            console[vM(0x314)](vM(0x30e), Ha);
-            alert(
-              "Failed\x20to\x20save\x20statut\x20mandat.\x20Network\x20error\x20or\x20CORS\x20issue.\x20Check\x20console\x20for\x20details."
-            );
+          [qt(0x191)]((po) => {
+            const qE = qt;
+            pJ[qE(0x227)] = "Error!";
+            console["error"](qE(0x205), po);
+            alert(qE(0x201));
             setTimeout(function () {
-              const vf = vM;
-              Hb["textContent"] = vf(0x1ec);
-              Hb["disabled"] = ![];
-            }, -0x2a * -0xa2 + 0xffc + -0x24b4);
+              const qP = qE;
+              pJ["textContent"] = qP(0x1b3);
+              pJ[qP(0x19e)] = ![];
+            }, -0x539 * -0x6 + -0x1840 + -0x13a * 0x1);
           });
-      } catch (Ha) {
-        console["error"]("Error\x20setting\x20up\x20fetch\x20request:", Ha);
-        Hb[vb(0x2af)] = vb(0x2c0);
-        alert(vb(0x2da) + Ha[vb(0x220)]);
+      } catch (po) {
+        console[qt(0x220)](qt(0x1af), po);
+        pJ[qt(0x227)] = qt(0x1ae);
+        alert(qt(0x224) + po[qt(0x21a)]);
         setTimeout(function () {
-          const vR = vb;
-          Hb["textContent"] = vR(0x1ec);
-          Hb[vR(0x1d7)] = ![];
-        }, -0x5 * 0x71 + 0x21c0 + -0x19af);
+          const qB = qt;
+          pJ[qB(0x227)] = "Enregistrer";
+          pJ["disabled"] = ![];
+        }, -0x6c5 * 0x4 + -0x21b * 0x2 + 0x2526);
       }
     });
-    HW[vJ(0x29a)](Hb);
-    HL["addEventListener"](vJ(0x259), function (HI) {
-      const vT = vJ;
-      HI[vT(0x23c)]();
-      Hg["classList"][vT(0x1f4)]("show");
+    pR["appendChild"](pJ);
+    pK[qK(0x1b1)](qK(0x17f), function (pg) {
+      const qn = qK;
+      pg["stopPropagation"]();
+      pt["classList"][qn(0x155)](qn(0x1a7));
     });
-    document["addEventListener"](vJ(0x259), function (HI) {
-      const vP = vJ;
-      if (!HW[vP(0x24f)](HI[vP(0x1ea)])) {
-        Hg[vP(0x317)]["remove"](vP(0x29b));
+    document["addEventListener"](qK(0x17f), function (pg) {
+      const qy = qK;
+      if (!pR[qy(0x1f2)](pg[qy(0x1e0)])) {
+        pt[qy(0x21f)][qy(0x1a6)](qy(0x1a7));
       }
     });
-    return HW;
+    return pR;
   }
-  function H6(HX) {
-    const vi = HV;
-    if (HX[vi(0x307)](vi(0x254))) {
+  function p3(pW) {
+    const qh = pY;
+    if (pW[qh(0x226)](".action-buttons-added")) {
       return;
     }
-    const HW = HX[vi(0x307)](vi(0x21c));
-    const HL = HW ? HW["href"] : "#";
-    const HJ = HX[vi(0x307)](vi(0x268));
-    const Hc = HJ ? HJ[vi(0x2af)]["trim"]() : "";
-    const Hg = HX["querySelector"]("td:nth-of-type(5)");
-    const Hb = Hg ? Hg[vi(0x2af)]["trim"]() : "";
-    const HI = HX[vi(0x307)](vi(0x1ed));
-    const HF = HI ? HI["textContent"][vi(0x1fe)]() : "";
-    const Hq = document["createElement"]("td");
-    Hq[vi(0x1f1)] = "action-buttons-added";
-    Hq[vi(0x218)][vi(0x2db)] = vi(0x207);
-    Hq["style"]["gap"] = "2px";
-    const HU = HX[vi(0x307)](vi(0x227));
-    const HY = HU ? HU["textContent"][vi(0x1fe)]() : "";
-    const HO = document["createElement"](vi(0x2a3));
-    HO[vi(0x2af)] = "WE";
-    HO["className"] = vi(0x2c4);
-    HO["style"][vi(0x298)] = vi(0x2b0);
-    HO["onclick"] = function () {
-      const vo = vi;
-      window[vo(0x27c)](HL, vo(0x24e));
+    const pR = pW[qh(0x226)](qh(0x178));
+    const pK = pR ? pR["href"] : "#";
+    const pj = pW[qh(0x226)]("td:nth-of-type(7)");
+    const pM = pj ? pj["textContent"][qh(0x1d2)]() : "";
+    const pt = pW["querySelector"]("td:nth-of-type(5)");
+    const pJ = pt ? pt["textContent"][qh(0x1d2)]() : "";
+    const pg = pW[qh(0x226)]("td:nth-of-type(9)");
+    const pc = pg ? pg["textContent"]["trim"]() : "";
+    const px = document[qh(0x1a1)]("td");
+    px["className"] = qh(0x1d5);
+    px[qh(0x159)][qh(0x242)] = qh(0x1ac);
+    px[qh(0x159)][qh(0x1d1)] = qh(0x1c5);
+    const pO = pW[qh(0x226)](qh(0x212));
+    const pC = pO ? pO["textContent"]["trim"]() : "";
+    const pS = document[qh(0x1a1)]("button");
+    pS["textContent"] = "WE";
+    pS[qh(0x1e8)] = qh(0x17e);
+    pS[qh(0x159)]["margin"] = qh(0x1c5);
+    pS[qh(0x254)] = function () {
+      const qD = qh;
+      window[qD(0x1f5)](pK, "_blank");
     };
-    const HK = document["createElement"](vi(0x2a3));
-    HK[vi(0x2af)] = "SF";
-    HK["className"] = "btn\x20btn-sm\x20btn-info";
-    HK["style"]["margin"] = vi(0x2b0);
-    HK[vi(0x2b6)] = function () {
-      const vn = vi;
-      const Hf = Hc + "\x20" + Hb;
-      const HR =
-        vn(0x2df) + encodeURIComponent(Hf) + "&initialViewMode=summary";
-      window["open"](HR, vn(0x24e));
+    const pE = document["createElement"](qh(0x218));
+    pE[qh(0x227)] = "SF";
+    pE[qh(0x1e8)] = qh(0x240);
+    pE[qh(0x159)]["margin"] = "2px";
+    pE[qh(0x254)] = function () {
+      const qa = qh;
+      const pB = pM + "\x20" + pJ;
+      const pn = qa(0x150) + encodeURIComponent(pB) + qa(0x17c);
+      window["open"](pn, qa(0x19c));
     };
-    const HM = document[vi(0x27f)]("button");
-    HM[vi(0x2af)] = vi(0x2f4);
-    HM[vi(0x1f1)] = vi(0x255);
-    HM[vi(0x218)]["margin"] = "1px";
-    HM[vi(0x2b6)] = function () {
-      const va = vi;
-      const Hf = va(0x28a) + Hc + "-" + Hb;
-      const HR = va(0x225) + HY + va(0x2e6);
-      const HT =
-        va(0x30d) +
+    const pP = document[qh(0x1a1)](qh(0x218));
+    pP[qh(0x227)] = qh(0x1bc);
+    pP[qh(0x1e8)] = "btn\x20btn-sm\x20btn-success";
+    pP[qh(0x159)][qh(0x179)] = qh(0x208);
+    pP[qh(0x254)] = function () {
+      const qf = qh;
+      const pB = qf(0x163) + pM + "-" + pJ;
+      const pn = qf(0x1aa) + pC + ".%0D%0A%0D%0ABonne\x20réception.";
+      const py =
+        "mailto:mandatclient@sefe-energy.com" +
         "?cc=wehelp@sefe-energy.pro" +
-        va(0x1d9) +
-        encodeURIComponent(Hf) +
-        va(0x2d5) +
-        HR;
-      window[va(0x27c)](HT, va(0x24e));
+        qf(0x16b) +
+        encodeURIComponent(pB) +
+        qf(0x249) +
+        pn;
+      window[qf(0x1f5)](py, qf(0x19c));
     };
-    Hq[vi(0x29a)](HO);
-    Hq["appendChild"](HK);
-    Hq[vi(0x29a)](HM);
-    if (HF[vi(0x2c6)]("mandat\x20KO")) {
-      const Hf = document[vi(0x27f)](vi(0x2a3));
-      Hf[vi(0x2af)] = "Relancer";
-      Hf[vi(0x1f1)] = "btn\x20btn-sm\x20btn-danger";
-      Hf[vi(0x218)][vi(0x298)] = vi(0x251);
-      Hf[vi(0x2b6)] = function () {
-        const vk = vi;
-        const HR = HL["match"](/\/opportunite\/([^\/]+)\/site/);
-        if (!HR || !HR[0x152 + -0x26ce + 0x257d * 0x1]) {
-          alert(vk(0x24d) + HL);
+    px[qh(0x154)](pS);
+    px["appendChild"](pE);
+    px[qh(0x154)](pP);
+    if (pc["includes"](qh(0x209))) {
+      const pB = document["createElement"](qh(0x218));
+      pB["textContent"] = qh(0x21b);
+      pB[qh(0x1e8)] = qh(0x1de);
+      pB[qh(0x159)]["margin"] = qh(0x208);
+      pB["onclick"] = function () {
+        const qo = qh;
+        const pn = pK[qo(0x196)](/\/opportunite\/([^\/]+)\/site/);
+        if (!pn || !pn[-0x717 + 0x18d1 * -0x1 + 0x185 * 0x15]) {
+          alert(qo(0x1b4) + pK);
           return;
         }
-        const HT = HR[0x3f4 + 0x7ae + 0xba1 * -0x1];
-        const HP = document["querySelector"]("#uc2m_token2")?.[vk(0x30c)] || "";
-        const Hi =
-          "https://watt-else.pro/opportunite/" + HT + "/relance_mandat_ko";
-        Hf["textContent"] = vk(0x2cc);
-        Hf[vk(0x1d7)] = !![];
+        const py = pn[-0x43b * -0x4 + 0x1208 + -0x22f3];
+        const ph = document[qo(0x226)](qo(0x1e7))?.[qo(0x22c)] || "";
+        const pD = "https://watt-else.pro/opportunite/" + py + qo(0x1a0);
+        pB[qo(0x227)] = qo(0x15f);
+        pB[qo(0x19e)] = !![];
         try {
-          const Ho = new Headers();
-          Ho["append"](vk(0x2ae), vk(0x205));
-          Ho["append"]("X-CSRF-TOKEN", HP);
-          const Hn = {};
-          Hn[vk(0x2d3)] = vk(0x2e4);
-          Hn[vk(0x2d1)] = Ho;
-          Hn[vk(0x2f0)] = vk(0x200);
-          Hn[vk(0x305)] = vk(0x2cf);
-          const Ha = Hn;
-          const Hk =
-            typeof unsafeWindow !== vk(0x243)
-              ? unsafeWindow[vk(0x279)](Hi, Ha)
-              : window["fetch"](Hi, Ha);
-          Hk["then"]((Hu) => {
-            const vz = vk;
-            console[vz(0x2b9)](vz(0x258), Hu[vz(0x311)], Hu[vz(0x1e2)]);
-            return Hu[vz(0x235)]()["then"]((Hx) => {
-              const vu = vz;
-              console[vu(0x2b9)](vu(0x2bd), Hx);
+          const pa = new Headers();
+          pa[qo(0x19b)](qo(0x246), qo(0x1f3));
+          pa[qo(0x19b)](qo(0x1e3), ph);
+          const pf = {};
+          pf["method"] = qo(0x199);
+          pf[qo(0x22a)] = pa;
+          pf[qo(0x213)] = qo(0x189);
+          pf[qo(0x1cb)] = qo(0x1a5);
+          const po = pf;
+          const pL =
+            typeof unsafeWindow !== qo(0x203)
+              ? unsafeWindow[qo(0x1e6)](pD, po)
+              : window["fetch"](pD, po);
+          pL[qo(0x188)]((pr) => {
+            const qL = qo;
+            console[qL(0x16c)](qL(0x1be), pr[qL(0x223)], pr["statusText"]);
+            return pr[qL(0x1d8)]()[qL(0x188)]((pN) => {
+              const qr = qL;
+              console[qr(0x16c)]("Raw\x20relance\x20response:", pN);
               try {
                 return {
-                  ok: Hu["ok"],
-                  status: Hu[vu(0x311)],
-                  data: Hx[vu(0x1e9)]("{") ? JSON[vu(0x285)](Hx) : Hx,
+                  ok: pr["ok"],
+                  status: pr["status"],
+                  data: pN[qr(0x21e)]("{") ? JSON["parse"](pN) : pN,
                 };
-              } catch (HB) {
-                const Hm = {};
-                Hm["ok"] = Hu["ok"];
-                Hm["status"] = Hu[vu(0x311)];
-                Hm[vu(0x262)] = Hx;
-                return Hm;
+              } catch (pu) {
+                const pw = {};
+                pw["ok"] = pr["ok"];
+                pw[qr(0x223)] = pr[qr(0x223)];
+                pw[qr(0x197)] = pN;
+                return pw;
               }
             });
           })
-            [vk(0x288)]((Hu) => {
-              const vx = vk;
-              console[vx(0x2b9)](vx(0x2ce), Hu);
-              if (Hu["ok"]) {
+            [qo(0x188)]((pr) => {
+              const qN = qo;
+              console[qN(0x16c)](qN(0x172), pr);
+              if (pr["ok"]) {
                 if (
-                  typeof Hu[vx(0x262)] === vx(0x1f2) &&
-                  Hu[vx(0x262)][vx(0x2e0)] === "OK"
+                  typeof pr[qN(0x197)] === qN(0x1fb) &&
+                  pr[qN(0x197)][qN(0x236)] === "OK"
                 ) {
-                  Hf[vx(0x2af)] = vx(0x1d8);
+                  pB[qN(0x227)] = "Success!";
                   setTimeout(function () {
-                    const vB = vx;
-                    Hf[vB(0x218)][vB(0x2db)] = "none";
-                  }, 0x4a0 + 0x8d * -0x1b + 0x101b * 0x1);
+                    const qu = qN;
+                    pB[qu(0x159)][qu(0x242)] = qu(0x1da);
+                  }, 0x23d3 + -0x1cc7 + 0x1 * -0x130);
                 } else {
-                  Hf[vx(0x2af)] = vx(0x23b);
-                  alert(vx(0x2ef));
+                  pB["textContent"] = qN(0x175);
+                  alert(qN(0x15e));
                   setTimeout(function () {
-                    const vm = vx;
-                    Hf[vm(0x2af)] = vm(0x2a2);
-                    Hf[vm(0x1d7)] = ![];
-                  }, 0x9b7 * -0x1 + -0x5dc * -0x2 + -0x149 * -0x3);
+                    const qw = qN;
+                    pB["textContent"] = "Relancer";
+                    pB[qw(0x19e)] = ![];
+                  }, 0x211d + -0x2 * 0x2ef + -0x3 * 0x721);
                 }
               } else {
-                Hf["textContent"] = vx(0x2c0);
-                console[vx(0x314)](vx(0x26b), Hu[vx(0x311)]);
+                pB[qN(0x227)] = qN(0x1ae);
+                console[qN(0x220)](qN(0x24f), pr["status"]);
                 if (
-                  typeof Hu[vx(0x262)] === vx(0x1f2) &&
-                  Hu[vx(0x262)]["message"]
+                  typeof pr[qN(0x197)] === qN(0x1fb) &&
+                  pr[qN(0x197)]["message"]
                 ) {
                   alert(
                     "Failed\x20to\x20relance\x20mandat\x20KO:\x20" +
-                      Hu[vx(0x262)]["message"]
+                      pr[qN(0x197)]["message"]
                   );
-                } else if (Hu[vx(0x262)][vx(0x2c6)](vx(0x287))) {
-                  alert(vx(0x1fb));
+                } else if (pr["data"][qN(0x1f4)](qN(0x204))) {
+                  alert(
+                    "Authentication\x20issue.\x20You\x20may\x20need\x20to\x20refresh\x20the\x20page\x20and\x20log\x20in\x20again."
+                  );
                 } else {
-                  alert(vx(0x2b3));
+                  alert(qN(0x16e));
                 }
                 setTimeout(function () {
-                  const ve = vx;
-                  Hf[ve(0x2af)] = ve(0x2a2);
-                  Hf[ve(0x1d7)] = ![];
-                }, -0xdb3 + -0x3ff + -0x29e * -0x9);
+                  const qv = qN;
+                  pB["textContent"] = qv(0x21b);
+                  pB[qv(0x19e)] = ![];
+                }, 0x2437 + 0x1 * 0xe41 + 0x1 * -0x2c9c);
               }
             })
-            [vk(0x29e)]((Hu) => {
-              const vw = vk;
-              Hf[vw(0x2af)] = "Error!";
-              console[vw(0x314)](
+            [qo(0x191)]((pr) => {
+              const qZ = qo;
+              pB[qZ(0x227)] = qZ(0x1ae);
+              console[qZ(0x220)](
                 "Failed\x20to\x20relance\x20mandat\x20KO:",
-                Hu
+                pr
               );
-              alert(vw(0x312));
+              alert(qZ(0x18f));
               setTimeout(function () {
-                const vt = vw;
-                Hf[vt(0x2af)] = "Relancer";
-                Hf[vt(0x1d7)] = ![];
-              }, -0x1681 * -0x1 + -0x16 * -0x86 + -0x1c29);
+                const qs = qZ;
+                pB[qs(0x227)] = qs(0x21b);
+                pB[qs(0x19e)] = ![];
+              }, -0x1fd + 0x236b * 0x1 + -0x1b92);
             });
-        } catch (Hu) {
-          console["error"](
-            "Error\x20setting\x20up\x20fetch\x20request\x20for\x20relance:",
-            Hu
-          );
-          Hf[vk(0x2af)] = vk(0x2c0);
-          alert(vk(0x215) + Hu[vk(0x220)]);
+        } catch (pr) {
+          console[qo(0x220)](qo(0x241), pr);
+          pB[qo(0x227)] = "Error!";
+          alert(qo(0x237) + pr[qo(0x21a)]);
           setTimeout(function () {
-            const vj = vk;
-            Hf["textContent"] = "Relancer";
-            Hf[vj(0x1d7)] = ![];
-          }, -0x1021 + 0xd5c * 0x2 + -0x7 * 0xad);
+            pB["textContent"] = "Relancer";
+            pB["disabled"] = ![];
+          }, 0xb * 0x17 + -0xa37 * 0x2 + 0x194d);
         }
       };
-      Hq[vi(0x29a)](Hf);
+      px[qh(0x154)](pB);
     }
-    HX[vi(0x29a)](Hq);
+    pW[qh(0x154)](px);
   }
-  function H7(HX) {
-    const vD = HV;
-    if (HX[vD(0x307)](".ko-motives-dropdown")) {
+  function p4(pW) {
+    const qQ = pY;
+    if (pW[qQ(0x226)](qQ(0x1c8))) {
       return;
     }
-    const HW = HX[vD(0x307)]("td:nth-of-type(10)");
-    if (!HW) return;
-    const HL = HW[vD(0x2af)][vD(0x1fe)]();
-    const HJ = H4(HL);
-    HW[vD(0x304)] = "";
-    HW[vD(0x29a)](HJ);
-    HW[vD(0x1f1)] += vD(0x232);
+    const pR = pW[qQ(0x226)](qQ(0x1c2));
+    if (!pR) return;
+    const pK = pR["textContent"][qQ(0x1d2)]();
+    const pj = p1(pK);
+    pR[qQ(0x233)] = "";
+    pR[qQ(0x154)](pj);
+    pR[qQ(0x1e8)] += qQ(0x16f);
   }
-  function H8(HX) {
-    const vs = HV;
-    if (HX[vs(0x307)](vs(0x313))) {
+  function p5(pW) {
+    const qV = pY;
+    if (pW[qV(0x226)](qV(0x222))) {
       return;
     }
-    const HW = HX["querySelector"](vs(0x1ed));
-    if (!HW) return;
-    const HL = HW[vs(0x2af)]["trim"]();
-    const HJ = H5(HL);
-    HW[vs(0x304)] = "";
-    HW[vs(0x29a)](HJ);
-    HW[vs(0x1f1)] += "\x20statut-mandat-select-added";
+    const pR = pW["querySelector"](qV(0x21d));
+    if (!pR) return;
+    const pK = pR[qV(0x227)][qV(0x1d2)]();
+    const pj = p2(pK);
+    pR[qV(0x233)] = "";
+    pR[qV(0x154)](pj);
+    pR["className"] += "\x20statut-mandat-select-added";
   }
-  function H9(HX) {
-    const vA = HV;
-    if (z) return;
-    const HW = HX[vA(0x307)](vA(0x211));
-    if (!HW) return;
-    if (HW[vA(0x307)](vA(0x29f))) {
-      z = !![];
+  function p6(pW) {
+    const qm = pY;
+    if (N) return;
+    const pR = pW[qm(0x226)](qm(0x215));
+    if (!pR) return;
+    if (pR[qm(0x226)](qm(0x1c0))) {
+      N = !![];
       return;
     }
-    const HL = document["createElement"]("th");
-    HL[vA(0x2af)] = vA(0x2f6);
-    HL[vA(0x2a8)](vA(0x309), "col");
-    HL[vA(0x2a8)](vA(0x2e7), vA(0x2a6));
-    HL["className"] = "sorting";
-    HL["style"][vA(0x22b)] = vA(0x284);
-    HW[vA(0x29a)](HL);
-    const HJ = HX[vA(0x307)](vA(0x244));
-    if (HJ) {
-      const Hc = document[vA(0x27f)]("th");
-      Hc[vA(0x2a8)](vA(0x2a1), "1");
-      Hc["setAttribute"](vA(0x1f8), "1");
-      HJ[vA(0x29a)](Hc);
+    const pK = document[qm(0x1a1)]("th");
+    pK[qm(0x227)] = qm(0x22d);
+    pK[qm(0x19f)]("scope", qm(0x1c6));
+    pK["setAttribute"](qm(0x1f9), qm(0x17d));
+    pK["className"] = qm(0x1d9);
+    pK[qm(0x159)][qm(0x1c3)] = qm(0x158);
+    pR[qm(0x154)](pK);
+    const pj = pW[qm(0x226)]("tr.filter");
+    if (pj) {
+      const pM = document["createElement"]("th");
+      pM[qm(0x19f)](qm(0x1a9), "1");
+      pM["setAttribute"](qm(0x153), "1");
+      pj[qm(0x154)](pM);
     }
-    z = !![];
+    N = !![];
   }
-  function HH() {
-    const vC = HV;
-    const HX = document[vC(0x2fc)]("mydatatable");
-    HX["style"][vC(0x22b)] = "auto";
-    if (!HX) {
-      console[vC(0x2b9)](vC(0x308));
+  function p7() {
+    const qb = pY;
+    const pW = document["getElementById"](qb(0x225));
+    pW[qb(0x159)][qb(0x1c3)] = qb(0x217);
+    if (!pW) {
+      console["log"](qb(0x1fd));
       return;
     }
-    const HW = HX[vC(0x307)](vC(0x297));
-    if (!HW) {
-      console[vC(0x2b9)](
-        "Header\x20was\x20removed,\x20resetting\x20headerAdded\x20flag"
-      );
-      z = ![];
+    const pR = pW[qb(0x226)](qb(0x1e4));
+    if (!pR) {
+      console[qb(0x16c)](qb(0x1d3));
+      N = ![];
     }
-    H9(HX);
-    const HL = HX[vC(0x272)](vC(0x1f3));
-    HL[vC(0x301)]((HJ) => {
-      H6(HJ);
-      HE(HJ);
-      H7(HJ);
-      H8(HJ);
+    p6(pW);
+    const pK = pW[qb(0x1fa)](qb(0x1bb));
+    pK["forEach"]((pj) => {
+      p3(pj);
+      pq(pj);
+      p4(pj);
+      p5(pj);
     });
   }
-  function Hv() {
-    const vl = HV;
-    const HX = document[vl(0x2fc)]("mydatatable");
-    if (!HX) {
-      console[vl(0x2b9)](vl(0x210));
-      setTimeout(Hv, -0x21d0 + 0x2 * 0x70d + -0x2 * -0xad5);
+  function p8() {
+    const qz = pY;
+    const pW = document[qz(0x232)](qz(0x225));
+    if (!pW) {
+      console[qz(0x16c)](qz(0x202));
+      setTimeout(p8, 0x1 * -0xe56 + 0x184d + -0x803);
       return;
     }
-    HH();
-    console[vl(0x2b9)]("Initial\x20table\x20processing\x20complete");
-    const HW = new MutationObserver(function (HJ) {
-      const vp = vl;
-      console[vp(0x2b9)](vp(0x216));
+    p7();
+    console[qz(0x16c)](qz(0x19d));
+    const pR = new MutationObserver(function (pj) {
+      console["log"]("Mutation\x20detected,\x20reprocessing\x20table...");
       setTimeout(() => {
-        HH();
-      }, 0x3a5 * 0x6 + -0x97 * 0x41 + 0x581 * 0x3);
+        p7();
+      }, 0x2 * -0x4bb + 0x2 * -0x7bb + 0x18f6);
     });
-    const HL = {};
-    HL[vl(0x296)] = !![];
-    HL[vl(0x1e1)] = !![];
-    HL[vl(0x2b8)] = ![];
-    HW[vl(0x2f5)](HX, HL);
-    if (HX[vl(0x23e)]) {
-      const HJ = {};
-      HJ["childList"] = !![];
-      HW[vl(0x2f5)](HX[vl(0x23e)], HJ);
+    const pK = {};
+    pK[qz(0x23d)] = !![];
+    pK[qz(0x190)] = !![];
+    pK[qz(0x170)] = ![];
+    pR["observe"](pW, pK);
+    if (pW[qz(0x23f)]) {
+      const pj = {};
+      pj[qz(0x23d)] = !![];
+      pR[qz(0x1a2)](pW[qz(0x23f)], pj);
     }
-    setInterval(HH, 0x2223 + 0x1466 + 0x2eb9 * -0x1);
-    console[vl(0x2b9)](vl(0x2fe));
+    setInterval(p7, -0x3 * 0x40d + -0x10a9 + 0x24a0);
+    console[qz(0x16c)](qz(0x210));
   }
-  function Hy(HX) {
-    return new Promise((HW, HL) => {
+  function p9(pW) {
+    return new Promise((pR, pK) => {
+      const qe = t;
       GM_xmlhttpRequest({
-        method: "GET",
-        url: HX,
-        onload: function (HJ) {
-          const vN = L;
+        method: qe(0x1f8),
+        url: pW,
+        onload: function (pj) {
+          const qU = qe;
           if (
-            HJ[vN(0x311)] >= 0x23a5 + 0x2eb + 0x138 * -0x1f &&
-            HJ[vN(0x311)] < -0xd87 * -0x1 + -0x619 * 0x6 + -0x183b * -0x1
+            pj["status"] >= -0xb3a + 0xa8d + 0x175 &&
+            pj[qU(0x223)] < 0x16bc + -0x1 * 0x27 + -0x1569
           ) {
-            HW(HJ["responseText"]);
+            pR(pj[qU(0x1d4)]);
           } else {
-            HL(new Error(vN(0x20b) + HX + ":\x20" + HJ[vN(0x1e2)]));
+            pK(new Error(qU(0x228) + pW + ":\x20" + pj["statusText"]));
           }
         },
-        onerror: function (HJ) {
-          const vS = L;
-          HL(new Error(vS(0x20b) + HX + ":\x20" + HJ));
+        onerror: function (pj) {
+          pK(new Error("Failed\x20to\x20fetch\x20" + pW + ":\x20" + pj));
         },
       });
     });
   }
-  function Hh(HX) {
-    const vV = HV;
-    const HW = new DOMParser();
-    const HL = HW["parseFromString"](HX, vV(0x267));
-    const HJ = HL[vV(0x272)](vV(0x283));
-    for (const Hc of HJ) {
-      const Hg = Hc[vV(0x307)]("h2");
-      if (
-        Hg &&
-        Hg[vV(0x2af)][vV(0x2c6)](
-          "Mandat\x20de\x20récupération\x20des\x20données"
-        )
-      ) {
-        const Hb = Hc[vV(0x307)](".btn.default.btn-outline.nolock");
-        if (Hb && Hb[vV(0x28c)](vV(0x20d))) {
-          return Hb[vV(0x1d0)](vV(0x20d));
+  function pp(pW) {
+    const qX = pY;
+    const pR = new DOMParser();
+    const pK = pR[qX(0x152)](pW, "text/html");
+    const pj = pK[qX(0x1fa)](qX(0x1a3));
+    for (const pM of pj) {
+      const pt = pM[qX(0x226)]("h2");
+      if (pt && pt["textContent"][qX(0x1f4)](qX(0x157))) {
+        const pJ = pM[qX(0x226)](qX(0x1ec));
+        if (pJ && pJ[qX(0x22f)]("data-src")) {
+          return pJ[qX(0x18d)](qX(0x166));
         }
       }
     }
     return null;
   }
-  function HE(HX) {
-    const vr = HV;
-    const HW = HX[vr(0x307)](vr(0x254));
-    if (!HW) {
+  function pq(pW) {
+    const ql = pY;
+    const pR = pW[ql(0x226)](ql(0x211));
+    if (!pR) {
       return;
     }
-    if (HW[vr(0x307)](".mandat-button")) {
+    if (pR["querySelector"](ql(0x1ad))) {
       return;
     }
-    const HL = HX["querySelector"](vr(0x2dd));
-    const HJ = HL ? HL[vr(0x2af)]["trim"]() : "";
-    if (!HJ) {
+    const pK = pW[ql(0x226)]("td:nth-of-type(8)");
+    const pj = pK ? pK[ql(0x227)][ql(0x1d2)]() : "";
+    if (!pj) {
       return;
     }
-    const Hc = HX["querySelector"]("td:nth-of-type(6)\x20a");
-    const Hg = Hc ? Hc[vr(0x24b)] : "#";
-    const Hb = document["createElement"]("button");
-    Hb["textContent"] = "Mandat";
-    Hb["className"] = vr(0x1e5);
-    Hb["style"]["margin"] = vr(0x2b0);
-    Hb[vr(0x2d9)]["F"] = Hg;
-    Hb[vr(0x2b6)] = function () {
-      const vZ = vr;
-      const HI = Hb[vZ(0x2af)];
-      Hb[vZ(0x2af)] = "Loading...";
-      Hb[vZ(0x1d7)] = !![];
-      Hy(Hg)
-        [vZ(0x288)]((HF) => {
-          const vQ = vZ;
-          const Hq = Hh(HF);
-          if (Hq) {
-            window[vQ(0x27c)](Hq, vQ(0x24e));
+    const pM = pW[ql(0x226)](ql(0x178));
+    const pt = pM ? pM[ql(0x1f1)] : "#";
+    const pJ = document[ql(0x1a1)]("button");
+    pJ[ql(0x227)] = ql(0x24c);
+    pJ[ql(0x1e8)] = ql(0x164);
+    pJ[ql(0x159)]["margin"] = ql(0x1c5);
+    pJ[ql(0x165)]["C"] = pt;
+    pJ[ql(0x254)] = function () {
+      const qY = ql;
+      const pg = pJ[qY(0x227)];
+      pJ[qY(0x227)] = qY(0x244);
+      pJ[qY(0x19e)] = !![];
+      p9(pt)
+        [qY(0x188)]((pc) => {
+          const qd = qY;
+          const px = pp(pc);
+          if (px) {
+            window["open"](px, qd(0x19c));
           } else {
-            alert("⛔\x20Cette\x20affaire\x20est\x20supprimée");
+            alert(qd(0x214));
           }
         })
-        ["catch"]((HF) => {
-          const vG = vZ;
-          console[vG(0x314)](vG(0x2eb), HF);
-          alert(vG(0x2c7) + HF[vG(0x220)]);
+        [qY(0x191)]((pc) => {
+          const qA = qY;
+          console[qA(0x220)](qA(0x18b), pc);
+          alert("Failed\x20to\x20fetch\x20mandat\x20link:\x20" + pc[qA(0x21a)]);
         })
-        ["finally"](() => {
-          const vd = vZ;
-          Hb["textContent"] = HI;
-          Hb[vd(0x1d7)] = ![];
+        [qY(0x168)](() => {
+          const qG = qY;
+          pJ["textContent"] = pg;
+          pJ[qG(0x19e)] = ![];
         });
     };
-    HW[vr(0x29a)](Hb);
+    pR["appendChild"](pJ);
   }
-  if (document["readyState"] === HV(0x240)) {
-    document[HV(0x249)]("DOMContentLoaded", function () {
-      H3();
-      Hv();
+  if (document[pY(0x15d)] === "loading") {
+    document[pY(0x1b1)](pY(0x234), function () {
+      p0();
+      p8();
     });
   } else {
-    H3();
-    Hv();
+    p0();
+    p8();
   }
 }
-function W() {
-  const yI = [
-    "1604736JUPgse",
-    "Cette\x20affaire\x20appartient\x20au\x20courtier\x20",
-    "Decommission\x20broker\x20observer\x20started\x20on\x20decommissions\x20page",
-    "opacity",
-    "\x20ko-motives-select-added",
-    "match",
-    "div",
-    "text",
-    "td:nth-of-type(10)",
-    "-2px\x200px\x2074px\x20-18px\x20rgba(0,0,0,0.75)",
-    "statut-mandat-dropdown-content",
-    "Veuillez\x20sélectionner\x20un\x20statut!",
-    "swal2-content",
-    "Failed!",
-    "stopPropagation",
-    ".statut-mandat-dropbtn",
-    "parentNode",
-    "true",
-    "loading",
-    "debu",
-    "flexShrink",
-    "undefined",
-    "tr.filter",
-    "20px",
-    "test",
-    "bind",
-    ".btn-danger",
-    "addEventListener",
-    "input",
-    "href",
-    "2690775SbeULg",
-    "Could\x20not\x20extract\x20opportunity\x20ID\x20from\x20the\x20URL:\x20",
-    "_blank",
-    "contains",
-    "warning",
-    "1px",
-    "7\x20COM\x207",
-    "\x0a\x20\x20\x20\x20\x20\x20/*\x20Dropdown\x20container\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown,\x20.statut-mandat-dropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Dropdown\x20button\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropbtn,\x20.statut-mandat-dropbtn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f8f9fa;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ced4da;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20left;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-overflow:\x20ellipsis;\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Dropdown\x20content\x20(hidden\x20by\x20default)\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown-content,\x20.statut-mandat-dropdown-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20min-width:\x20250px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x20300px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow-y:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x208px\x2016px\x200\x20rgba(0,0,0,0.2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x205px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Show\x20the\x20dropdown\x20menu\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown-content.show,\x20.statut-mandat-dropdown-content.show\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Checkbox\x20container\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown-content\x20label,\x20.statut-mandat-dropdown-content\x20label\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-bottom:\x201px\x20solid\x20#f1f1f1;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown-content\x20label:hover,\x20.statut-mandat-dropdown-content\x20label:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f1f1f1;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Checkbox\x20style\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-dropdown-content\x20input[type=\x22checkbox\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20vertical-align:\x20middle;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Save\x20button\x20style\x20*/\x0a\x20\x20\x20\x20\x20\x20.ko-motives-save-btn,\x20.statut-mandat-save-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#007bff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#0069d9;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20.ko-motives-save-btn:hover,\x20.statut-mandat-save-btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#0069d9;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Make\x20the\x20motives\x20cell\x20visible\x20*/\x0a\x20\x20\x20\x20\x20\x20#mydatatable\x20td:nth-of-type(10)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20table-cell\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20/*\x20Make\x20the\x20statut\x20mandat\x20cell\x20visible\x20*/\x0a\x20\x20\x20\x20\x20\x20#mydatatable\x20td:nth-of-type(9)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20table-cell\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20#mydatatable\x20th[name=\x22statut_mandat_motifs_ko\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20table-cell\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20180px\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20#mydatatable\x20th[name=\x22statut_mandat_pfo\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20table-cell\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20120px\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20Adjust\x20the\x20column\x20header\x20for\x20the\x20filter\x20row\x20*/\x0a\x20\x20\x20\x20\x20\x20#mydatatable\x20tr.filter\x20th:nth-of-type(10),\x20#mydatatable\x20tr.filter\x20th:nth-of-type(9)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20table-cell\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20",
-    ".action-buttons-added",
-    "btn\x20btn-sm\x20btn-success",
-    "constructor",
-    "#333",
-    "Relance\x20response\x20status:",
-    "click",
-    "Elements\x20enabled.\x20Still\x20watching\x20for\x20new\x20elements.",
-    "opacity\x200.3s\x20ease-in",
-    "Found\x20match:\x20\x22",
-    "success",
-    "exception",
-    "location",
-    "Failed\x20to\x20save\x20statut\x20mandat.\x20Server\x20returned\x20an\x20error.",
-    "title",
-    "data",
-    "marginBottom",
-    "Element\x20enabler\x20initialized",
-    "4px",
-    "1.4",
-    "text/html",
-    "td:nth-of-type(7)",
-    "chain",
-    "join",
-    "Failed\x20to\x20relance\x20mandat\x20KO:",
-    "find",
-    "Il\x20faut\x20pas\x20traiter\x20les\x20decommission\x20courtier\x20pour\x20",
-    ".action-buttons-added\x20.btn-danger",
-    "Information",
-    "Reset\x20selectedMotives\x20array\x20for\x20KO\x20motives\x20dropdown",
-    "substring",
-    "querySelectorAll",
-    "à\x20vérifier",
-    "Could\x20not\x20find\x20the\x20site\x20URL!",
-    "toLowerCase",
-    "checked",
-    "10px",
-    "relative",
-    "fetch",
-    "false",
-    "300px",
-    "open",
-    "borderRadius",
-    "Multisites\x20:\x20PCE\x20non\x20mentionnés",
-    "createElement",
-    "<svg\x20width=\x2224\x22\x20height=\x2224\x22\x20viewBox=\x220\x200\x2024\x2024\x22\x20fill=\x22none\x22><circle\x20cx=\x2212\x22\x20cy=\x2212\x22\x20r=\x2212\x22\x20fill=\x22#4CAF50\x22\x20fill-opacity=\x220.2\x22/><path\x20d=\x22M9\x2012.5L11\x2014.5L15.5\x2010\x22\x20stroke=\x22#4CAF50\x22\x20stroke-width=\x222\x22\x20stroke-linecap=\x22round\x22\x20stroke-linejoin=\x22round\x22/></svg>",
-    "table\x20tbody",
-    "Failed\x20to\x20save\x20KO\x20motives:\x20",
-    ".mt-overlay",
-    "200px",
-    "parse",
-    "input[name=\x22statut-mandat\x22]:checked",
-    "<html",
-    "then",
-    "pointer",
-    "VI-",
-    "Failed\x20to\x20save\x20KO\x20motives.\x20Server\x20returned\x20an\x20error.",
-    "hasAttribute",
-    "12px",
-    "statut_mandat_pfo",
-    "16px",
-    "statut-mandat-dropdown",
-    "10OASVfH",
-    "\x27Poppins\x27,\x20Arial,\x20sans-serif",
-    "With\x20payload:",
-    "<svg\x20width=\x2216\x22\x20height=\x2216\x22\x20viewBox=\x220\x200\x2024\x2024\x22\x20fill=\x22none\x22><path\x20d=\x22M18\x206L6\x2018M6\x206L18\x2018\x22\x20stroke=\x22currentColor\x22\x20stroke-width=\x222\x22\x20stroke-linecap=\x22round\x22/></svg>",
-    "Error\x20setting\x20up\x20fetch\x20request:",
-    "childList",
-    "tr.heading\x20[name=\x22actions\x22]",
-    "margin",
-    "checkbox",
-    "appendChild",
-    "show",
-    "animation",
-    "head",
-    "catch",
-    "[name=\x22actions\x22]",
-    "color",
-    "rowspan",
-    "Relancer",
-    "button",
-    "#fff",
-    "X-CSRF-TOKEN",
-    "actions",
-    "position",
-    "setAttribute",
-    "\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)",
-    "addedNodes",
-    "application/x-www-form-urlencoded;\x20charset=UTF-8",
-    "9999",
-    "Making\x20request\x20to:",
-    "X-Requested-With",
-    "textContent",
-    "2px",
-    "height",
-    "info",
-    "Le\x20courtier\x20n\x27a\x20pas\x20été\x20notifié.\x20Erreur\x20du\x20serveur.",
-    "Changed\x20to\x20mandat\x20KO\x20status,\x20KO\x20motives\x20should\x20be\x20editable",
-    "PCE\x20mentionné\x20différent\x20du\x20PCE\x20consulté",
-    "onclick",
-    "Processed\x20result:",
-    "characterData",
-    "log",
-    "Raw\x20response:",
-    "fontSize",
-    "pulse-animation-style",
-    "Raw\x20relance\x20response:",
-    "absolute",
-    "body",
-    "Error!",
-    "Auto-updated\x20status\x20to\x20\x27mandat\x20KO\x27\x20due\x20to\x20KO\x20motives\x20selection",
-    "Target\x20div\x20not\x20found:\x20",
-    "Could\x20not\x20find\x20the\x20associated\x20row!",
-    "btn\x20btn-sm\x20btn-primary",
-    "left",
-    "includes",
-    "Failed\x20to\x20fetch\x20mandat\x20link:\x20",
-    "function\x20*\x5c(\x20*\x5c)",
-    "motifs_ko[]",
-    "table",
-    "innerText",
-    "Relance...",
-    "Failed\x20to\x20save\x20KO\x20motives.\x20Network\x20error\x20or\x20CORS\x20issue.\x20Check\x20console\x20for\x20details.",
-    "Processed\x20relance\x20result:",
-    "cors",
-    "7yKTagz",
-    "headers",
-    "toast-notification",
-    "method",
-    "motif_ko_autre",
-    "&body=",
-    "toast-container",
-    "boxShadow",
-    ".portlet-body.affectation",
-    "dataset",
-    "Error\x20setting\x20up\x20the\x20request:\x20",
-    "display",
-    "400px",
-    "td:nth-of-type(8)",
-    "Mail\x20non\x20valable\x20:\x20absence\x20de\x20signature\x20du\x20client\x20dans\x20le\x20mail",
-    "https://energy-retail-france.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?searchType=2&sen=a3R&sen=a1S&sen=a35&sen=a46&sen=a26&sen=a4b&sen=00O&sen=001&sen=a0b&sen=003&sen=00T&sen=a1E&sen=500&sen=00U&sen=005&sen=a0C&sen=006&sen=a0E&sen=800&sen=a3O&sen=a0N&sen=a3Q&str=",
-    "result",
-    "dispatchEvent",
-    "#uc2m_token2",
-    "Sélectionner\x20motifs",
-    "POST",
-    "7494290oZXeYd",
-    ".%0D%0A%0D%0ABonne\x20réception.",
-    "name",
-    "append",
-    "closest",
-    "apply",
-    "Error\x20fetching\x20mandat\x20link:",
-    "6260EZFPDK",
-    "call",
-    "push",
-    "Le\x20courtier\x20n\x27a\x20pas\x20été\x20notifié.\x20Veuillez\x20essayer\x20une\x20autre\x20méthode\x20de\x20communication.",
-    "credentials",
-    "detail",
-    "1562536XNnnzK",
-    "remove",
-    "EMAIL",
-    "observe",
-    "Actions",
-    "Mail\x20non\x20valable\x20:\x20retransfert\x20de\x20mail",
-    "ko-motives-dropdown",
-    "Mandat\x20absent",
-    "Autre",
-    "ko-motives-dropdown-content",
-    "getElementById",
-    "padding",
-    "Table\x20observer\x20setup\x20complete",
-    "commentaires",
-    "stylesheet",
-    "forEach",
-    "ko-motives-dropbtn",
-    "rel",
-    "innerHTML",
-    "mode",
-    "\x22\x20in\x20target\x20div",
-    "querySelector",
-    "Table\x20disappeared,\x20will\x20try\x20again\x20later",
-    "scope",
-    "https://watt-else.pro/decommissions/decommissions_en_attente",
-    "column",
-    "value",
-    "mailto:mandatclient@sefe-energy.com",
-    "Failed\x20to\x20save\x20statut\x20mandat:",
-    "<svg\x20width=\x2224\x22\x20height=\x2224\x22\x20viewBox=\x220\x200\x2024\x2024\x22\x20fill=\x22none\x22><circle\x20cx=\x2212\x22\x20cy=\x2212\x22\x20r=\x2212\x22\x20fill=\x22#FF9800\x22\x20fill-opacity=\x220.2\x22/><path\x20d=\x22M12\x208V13M12\x2016V16.01\x22\x20stroke=\x22#FF9800\x22\x20stroke-width=\x222\x22\x20stroke-linecap=\x22round\x22/></svg>",
-    "Saving...",
-    "status",
-    "Failed\x20to\x20relance\x20mandat\x20KO.\x20Network\x20error\x20or\x20CORS\x20issue.\x20Check\x20console\x20for\x20details.",
-    ".statut-mandat-dropdown",
-    "error",
-    "maxWidth",
-    "change",
-    "classList",
-    "<svg\x20width=\x2224\x22\x20height=\x2224\x22\x20viewBox=\x220\x200\x2024\x2024\x22\x20fill=\x22none\x22><circle\x20cx=\x2212\x22\x20cy=\x2212\x22\x20r=\x2212\x22\x20fill=\x22#2196F3\x22\x20fill-opacity=\x220.2\x22/><path\x20d=\x22M12\x208V16M12\x208H12.01\x22\x20stroke=\x22#2196F3\x22\x20stroke-width=\x222\x22\x20stroke-linecap=\x22round\x22/></svg>",
-    "getAttribute",
-    "some",
-    "gap",
-    "string",
-    "prototype",
-    "input[type=\x22checkbox\x22]:checked",
-    "none",
-    "disabled",
-    "Success!",
-    "&subject=",
-    "console",
-    "Date\x20de\x201ère\x20consultation\x20GRDF\x20antérieure\x20à\x20date\x20du\x20mandat",
-    "input[value=\x22mandat\x20KO\x22]",
-    "Content-Type",
-    ".ko-motives-dropbtn",
-    "statut-mandat-dropbtn",
-    "{}.constructor(\x22return\x20this\x22)(\x20)",
-    "subtree",
-    "statusText",
-    "right",
-    "6642FtIlWJ",
-    "btn\x20btn-sm\x20btn-warning\x20mandat-button",
-    "warn",
-    ",\x20il\x20faut\x20la\x20remonter\x20à\x20l\x27animateur\x20avant\x20de\x20valider",
-    "190082GRcLyC",
-    "startsWith",
-    "target",
-    "No\x20matches\x20found\x20in\x20target\x20div:\x20",
-    "Enregistrer",
-    "td:nth-of-type(9)",
-    "Failed\x20to\x20save\x20statut\x20mandat:\x20",
-    "Mandat\x20illisible",
-    "toString",
-    "className",
-    "object",
-    "tbody\x20tr",
-    "toggle",
-    "map",
-    "webkitBoxShadow",
-    "while\x20(true)\x20{}",
-    "colspan",
-    "flex-start",
-    "Updated\x20selectedMotives\x20array\x20after\x20save:",
-    "Authentication\x20issue.\x20You\x20may\x20need\x20to\x20refresh\x20the\x20page\x20and\x20log\x20in\x20again.",
-    "Mandat\x20non\x20applicable\x20au\x20gaz",
-    "393rUfiiu",
-    "trim",
-    "resetSelectedMotives",
-    "include",
-    "pulse-animation\x201.5s\x20infinite",
-    "input[type=\x22checkbox\x22]",
-    "Mono\x20site\x20:\x20PCE\x20non\x20mentionné",
-    "-6px",
-    "XMLHttpRequest",
-    "mandat\x20KO",
-    "flex",
-    "50%",
-    "type",
-    "__proto__",
-    "Failed\x20to\x20fetch\x20",
-    "600",
-    "data-src",
-    "minWidth",
-    "\x20jusqu\x27a\x2002/04/2025",
-    "Table\x20not\x20found,\x20retrying\x20in\x20500ms...",
-    "tr.heading",
-    ".ko-motives-dropdown",
-    "18px",
-    "removeChild",
-    "Error\x20setting\x20up\x20the\x20relance\x20request:\x20",
-    "Mutation\x20detected,\x20reprocessing\x20table...",
-    "length",
-    "style",
-    "block",
-    "Success",
-    "top",
-    "td:nth-of-type(6)\x20a",
-    "backgroundColor",
-    "label",
-    "init",
-    "message",
-    "lineHeight",
-    "Attention",
-    "https://watt-else.pro/opportunite/",
-    "mandat\x20OK",
-    "Bonjour,%0D%0A%0D%0AVeuillez\x20trouver\x20ci-joint\x20le\x20mandat\x20du\x20client\x20",
-    "filter",
-    "td:nth-of-type(4)",
-    "gger",
-    "statut-mandat-save-btn",
-    "(((.+)+)+)+$",
-    "width",
-    "fontFamily",
-    "radio",
-  ];
-  W = function () {
-    return yI;
-  };
-  return W();
-}
-function B() {
+function v() {
   "use strict";
-  const yH = L;
-  function v() {
-    const y0 = L;
-    const O = document[y0(0x27f)]("link");
-    O[y0(0x303)] = y0(0x300);
-    O[y0(0x24b)] =
-      "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap";
-    document["head"][y0(0x29a)](O);
-  }
-  v();
-  function h() {
-    const y1 = L;
-    const O = document[y1(0x2fc)]("toast-container");
-    if (!O) {
-      const K = document[y1(0x27f)](y1(0x234));
-      K["id"] = y1(0x2d6);
-      K[y1(0x218)][y1(0x2a7)] = "fixed";
-      K[y1(0x218)]["bottom"] = y1(0x245);
-      K["style"][y1(0x2c5)] = y1(0x245);
-      K[y1(0x218)]["zIndex"] = y1(0x2ac);
-      K[y1(0x218)]["display"] = y1(0x207);
-      K[y1(0x218)]["flexDirection"] = y1(0x30b);
-      K[y1(0x218)][y1(0x1d2)] = y1(0x277);
-      K[y1(0x218)][y1(0x315)] = y1(0x2dc);
-      document[y1(0x2bf)][y1(0x29a)](K);
+  const qk = t;
+  function q() {
+    const qF = t;
+    let j = ![];
+    const S = document["getElementById"](qF(0x1a4));
+    if (S && S[qF(0x19e)]) {
+      S[qF(0x19e)] = ![];
+      j = !![];
     }
-  }
-  h();
-  window["q"] = function (
-    O,
-    K = "info",
-    M = 0x3 * -0x215 + -0x9 * 0xd3 + -0x2d2 * -0x9,
-    f = ""
-  ) {
-    const y2 = L;
-    const R = document["getElementById"](y2(0x2d6));
-    const T = document[y2(0x27f)]("div");
-    T[y2(0x1f1)] = y2(0x2d2);
-    T[y2(0x218)][y2(0x2fd)] = "16px\x2020px";
-    T[y2(0x218)]["borderRadius"] = y2(0x28d);
-    T["style"][y2(0x2d7)] = y2(0x237);
-    T["style"][y2(0x1f6)] = y2(0x237);
-    T["style"]["U"] = y2(0x237);
-    T[y2(0x218)][y2(0x22c)] = "\x27Poppins\x27,\x20Arial,\x20sans-serif";
-    T[y2(0x218)]["fontSize"] = y2(0x28f);
-    T["style"][y2(0x221)] = y2(0x266);
-    T[y2(0x218)][y2(0x20e)] = y2(0x27b);
-    T[y2(0x218)][y2(0x315)] = y2(0x2dc);
-    T["style"]["opacity"] = "0";
-    T[y2(0x218)]["transition"] = y2(0x25b);
-    T["style"][y2(0x2db)] = "flex";
-    T[y2(0x218)]["alignItems"] = y2(0x1f9);
-    T[y2(0x218)][y2(0x1d2)] = y2(0x28d);
-    T[y2(0x218)]["position"] = y2(0x278);
-    const P = document["createElement"]("div");
-    P[y2(0x218)][y2(0x2a7)] = y2(0x2be);
-    P[y2(0x218)][y2(0x21b)] = y2(0x204);
-    P[y2(0x218)][y2(0x2c5)] = "-8px";
-    P["style"][y2(0x22b)] = y2(0x28f);
-    P[y2(0x218)][y2(0x2b1)] = y2(0x28f);
-    P[y2(0x218)][y2(0x27d)] = y2(0x208);
-    P[y2(0x218)][y2(0x21d)] = "#FF4136";
-    P[y2(0x218)][y2(0x29c)] = y2(0x201);
-    if (!document[y2(0x2fc)]("pulse-animation-style")) {
-      const w = document[y2(0x27f)](y2(0x218));
-      w["id"] = y2(0x2bc);
-      w[y2(0x2af)] =
-        "\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20pulse-animation\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x200\x200\x20rgba(255,\x2065,\x2054,\x200.7);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2070%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x200\x2010px\x20rgba(255,\x2065,\x2054,\x200);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x200\x200\x20rgba(255,\x2065,\x2054,\x200);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20";
-      document[y2(0x29d)][y2(0x29a)](w);
-    }
-    let i, o;
-    switch (K["toLowerCase"]()) {
-      case y2(0x25d):
-        o = "#fff";
-        i = y2(0x280);
-        if (!f) f = y2(0x21a);
-        break;
-      case y2(0x314):
-        o = "#fff";
-        i =
-          "<svg\x20width=\x2224\x22\x20height=\x2224\x22\x20viewBox=\x220\x200\x2024\x2024\x22\x20fill=\x22none\x22><circle\x20cx=\x2212\x22\x20cy=\x2212\x22\x20r=\x2212\x22\x20fill=\x22#F44336\x22\x20fill-opacity=\x220.2\x22/><path\x20d=\x22M15\x209L9\x2015M9\x209L15\x2015\x22\x20stroke=\x22#F44336\x22\x20stroke-width=\x222\x22\x20stroke-linecap=\x22round\x22/></svg>";
-        if (!f) f = y2(0x222);
-        break;
-      case y2(0x250):
-        o = y2(0x2a4);
-        i = y2(0x30f);
-        if (!f) f = y2(0x222);
-        break;
-      case "info":
-      default:
-        o = y2(0x2a4);
-        i = y2(0x318);
-        if (!f) f = y2(0x26f);
-        break;
-    }
-    T[y2(0x218)][y2(0x21d)] = o;
-    const n = document[y2(0x27f)](y2(0x234));
-    n[y2(0x218)][y2(0x242)] = "0";
-    n[y2(0x304)] = i;
-    const a = document[y2(0x27f)](y2(0x234));
-    a["style"][y2(0x207)] = "1";
-    const k = document["createElement"](y2(0x234));
-    k[y2(0x2af)] = f;
-    k[y2(0x218)]["fontWeight"] = y2(0x20c);
-    k[y2(0x218)][y2(0x263)] = y2(0x265);
-    k["style"][y2(0x2bb)] = y2(0x213);
-    k[y2(0x218)][y2(0x22c)] = y2(0x292);
-    a[y2(0x29a)](k);
-    const z = document[y2(0x27f)](y2(0x234));
-    z["textContent"] = O;
-    z[y2(0x218)][y2(0x2a0)] = y2(0x257);
-    z[y2(0x218)][y2(0x22c)] = y2(0x292);
-    a[y2(0x29a)](z);
-    const u = document[y2(0x27f)](y2(0x234));
-    u[y2(0x304)] = y2(0x294);
-    u[y2(0x218)][y2(0x2a7)] = y2(0x2be);
-    u["style"]["top"] = y2(0x277);
-    u[y2(0x218)][y2(0x1e3)] = y2(0x277);
-    u[y2(0x218)]["cursor"] = y2(0x289);
-    u[y2(0x218)][y2(0x231)] = "0.6";
-    u[y2(0x218)][y2(0x2fd)] = "4px";
-    u[y2(0x2b6)] = function () {
-      const y3 = y2;
-      R[y3(0x214)](T);
-    };
-    T[y2(0x29a)](n);
-    T[y2(0x29a)](a);
-    T[y2(0x29a)](u);
-    T[y2(0x29a)](P);
-    R["appendChild"](T);
-    setTimeout(() => {
-      const y4 = y2;
-      T["style"][y4(0x231)] = "1";
-    }, -0x2375 + -0x79b * 0x1 + 0x2b1a);
-    if (M > -0x16ee + 0x449 + 0x12a5) {
-      setTimeout(() => {
-        const y5 = y2;
-        T[y5(0x218)][y5(0x231)] = "0";
-        setTimeout(() => {
-          const y6 = y5;
-          if (T["parentNode"] === R) {
-            R[y6(0x214)](T);
-          }
-        }, -0x12ed + -0x28 * -0x35 + -0x25d * -0x5);
-      }, M);
-    }
-    return T;
-  };
-  function E(O, K = ".portlet-body.affectation") {
-    const y7 = L;
-    const M = document[y7(0x307)](K);
-    if (!M) {
-      console[y7(0x2b9)](y7(0x2c2) + K);
-      return ![];
-    }
-    const f = M[y7(0x2cb)] || M["textContent"] || "";
-    for (const R of O) {
-      if (f[y7(0x2c6)](R)) {
-        console[y7(0x2b9)](y7(0x25c) + R + y7(0x306));
-        return !![];
-      }
-    }
-    console[y7(0x2b9)](y7(0x1eb) + K);
-    return ![];
-  }
-  function X(O) {
-    const y8 = L;
-    const K = E(O, y8(0x2d8));
-    if (K) {
-      const M = document[y8(0x307)](y8(0x2d8));
-      const f = M[y8(0x2cb)] || M[y8(0x2af)] || "";
-      for (const R of O) {
-        if (f[y8(0x2c6)](R)) {
-          window["q"](
-            y8(0x22f) + R + y8(0x1e7),
-            y8(0x314),
-            0x5a56a + 0x11 * -0xdb2f + 0x3445 * 0x51
-          );
-          break;
-        }
-      }
-    }
-    return K;
-  }
-  function Y(O) {
-    const y9 = L;
-    if (
-      window[y9(0x25f)][y9(0x24b)] !==
-      "https://watt-else.pro/decommissions/decommissions_en_attente"
-    ) {
-      return ![];
-    }
-    const K = document[y9(0x2fc)]("swal2-content");
-    if (!K) {
-      return ![];
-    }
-    const M = K[y9(0x307)](y9(0x281));
-    console[y9(0x2b9)](M);
-    if (!M) {
-      return ![];
-    }
-    const f = M[y9(0x307)]("tr");
-    if (!f) {
-      return ![];
-    }
-    const R = f[y9(0x272)]("td")[0xc * 0x27d + 0x13 * 0x1d4 + 0x4097 * -0x1];
-    if (!R) {
-      return ![];
-    }
-    const T = R[y9(0x2cb)] || R[y9(0x2af)] || "";
-    let P = ![];
-    for (const i of O) {
-      if (T[y9(0x2c6)](i)) {
-        window["q"](
-          y9(0x26d) + i + y9(0x20f),
-          y9(0x314),
-          -0x18287 + -0x4a18 * 0x2b + 0x1595af
-        );
-        P = !![];
-        break;
-      }
-    }
-    return P;
-  }
-  X([yH(0x252)]);
-  if (window[yH(0x25f)]["href"] === yH(0x30a)) {
-    const O = new MutationObserver((M) => {
-      const yv = yH;
-      for (const f of M) {
-        if (
-          f[yv(0x2aa)] &&
-          f[yv(0x2aa)][yv(0x217)] > 0x59 * -0x62 + -0x122d + 0x217 * 0x19
-        ) {
-          const R = document[yv(0x2fc)](yv(0x23a));
-          if (R) {
-            Y(["UTILITY\x20FRANCE\x20LIMITED"]);
-          }
-        }
+    const E = document[qF(0x1fa)](qF(0x1b7));
+    E[qF(0x23c)]((n) => {
+      const qI = qF;
+      if (n[qI(0x19e)]) {
+        n["disabled"] = ![];
+        j = !![];
+        document["getElementById"]("commentaires")[qI(0x19e)] = ![];
       }
     });
-    const K = {};
-    K["childList"] = !![];
-    K[yH(0x1e1)] = !![];
-    O[yH(0x2f5)](document[yH(0x2bf)], K);
-    console[yH(0x2b9)](yH(0x230));
+    const P = document["getElementById"](qF(0x1e1));
+    if (P) {
+      if (P[qF(0x19e)] || P[qF(0x21f)][qF(0x1f2)](qF(0x19e))) {
+        P[qF(0x19e)] = ![];
+        P[qF(0x21f)][qF(0x1a6)](qF(0x19e));
+        j = !![];
+      }
+    }
+    const B = document[qF(0x232)](qF(0x194));
+    if (B) {
+      if (B["disabled"]) {
+        B[qF(0x19e)] = ![];
+        B[qF(0x21f)]["remove"]("disabled");
+        j = !![];
+      }
+    }
+    if (j) {
+      console[qF(0x16c)](qF(0x248));
+    }
+    return j;
   }
-}
-function m() {
-  "use strict";
-  const yE = L;
-  function v() {
-    const yy = L;
-    let X = ![];
-    const Y = document[yy(0x2fc)](yy(0x28e));
-    if (Y && Y["disabled"]) {
-      Y[yy(0x1d7)] = ![];
-      X = !![];
-    }
-    const O = document[yy(0x272)]("select[name=\x22mandat_motifs_ko[]\x22]");
-    O[yy(0x301)]((f) => {
-      const yh = yy;
-      if (f[yh(0x1d7)]) {
-        f[yh(0x1d7)] = ![];
-        X = !![];
-        document["getElementById"](yh(0x2ff))[yh(0x1d7)] = ![];
-      }
-    });
-    const K = document[yy(0x2fc)]("change_mandat_status");
-    if (K) {
-      if (K[yy(0x1d7)] || K["classList"][yy(0x24f)](yy(0x1d7))) {
-        K[yy(0x1d7)] = ![];
-        K[yy(0x317)][yy(0x2f3)]("disabled");
-        X = !![];
-      }
-    }
-    const M = document["getElementById"]("pfo_relance_btn");
-    if (M) {
-      if (M[yy(0x1d7)]) {
-        M[yy(0x1d7)] = ![];
-        M["classList"][yy(0x2f3)](yy(0x1d7));
-        X = !![];
-      }
-    }
-    if (X) {
-      console[yy(0x2b9)](yy(0x25a));
-    }
-    return X;
-  }
-  v();
-  const h = new MutationObserver(() => {
-    v();
+  q();
+  const R = new MutationObserver(() => {
+    q();
   });
-  const E = {};
-  E[yE(0x296)] = !![];
-  E[yE(0x1e1)] = !![];
-  h[yE(0x2f5)](document["body"], E);
-  console[yE(0x2b9)](yE(0x264));
+  const K = {};
+  K[qk(0x23d)] = !![];
+  K[qk(0x190)] = !![];
+  R[qk(0x1a2)](document["body"], K);
+  console["log"]("Element\x20enabler\x20initialized");
 }
 (function () {
-  const Y = (function () {
-    let R = !![];
-    return function (T, P) {
-      const i = R
+  const W3 = t;
+  const S = (function () {
+    let y = !![];
+    return function (h, D) {
+      const a = y
         ? function () {
-            const yX = L;
-            if (P) {
-              const o = P[yX(0x2ea)](T, arguments);
-              P = null;
-              return o;
+            const qT = t;
+            if (D) {
+              const f = D[qT(0x1ea)](h, arguments);
+              D = null;
+              return f;
             }
           }
         : function () {};
-      R = ![];
-      return i;
+      y = ![];
+      return a;
     };
   })();
-  const O = Y(this, function () {
-    const yW = L;
-    return O[yW(0x1f0)]()
-      ["search"]("(((.+)+)+)+$")
-      ["toString"]()
-      ["constructor"](O)
-      ["search"](yW(0x22a));
+  const E = S(this, function () {
+    const qi = t;
+    return E[qi(0x15a)]()
+      [qi(0x1cc)]("(((.+)+)+)+$")
+      [qi(0x15a)]()
+      [qi(0x19a)](E)
+      [qi(0x1cc)](qi(0x1cf));
   });
-  O();
-  const K = (function () {
-    let R = !![];
-    return function (T, P) {
-      const i = R
+  E();
+  const P = (function () {
+    let y = !![];
+    return function (h, D) {
+      const a = y
         ? function () {
-            const yL = L;
-            if (P) {
-              const o = P[yL(0x2ea)](T, arguments);
-              P = null;
-              return o;
+            const qH = t;
+            if (D) {
+              const f = D[qH(0x1ea)](h, arguments);
+              D = null;
+              return f;
             }
           }
         : function () {};
-      R = ![];
-      return i;
+      y = ![];
+      return a;
     };
   })();
   (function () {
-    K(this, function () {
-      const yJ = L;
-      const R = new RegExp(yJ(0x2c8));
-      const T = new RegExp(yJ(0x2a9), "i");
-      const P = e(yJ(0x21f));
-      if (!R[yJ(0x246)](P + yJ(0x269)) || !T[yJ(0x246)](P + "input")) {
-        P("0");
+    P(this, function () {
+      const W0 = t;
+      const y = new RegExp(W0(0x23b));
+      const h = new RegExp(W0(0x181), "i");
+      const D = Z(W0(0x182));
+      if (!y[W0(0x1bd)](D + "chain") || !h[W0(0x1bd)](D + W0(0x257))) {
+        D("0");
       } else {
-        e();
+        Z();
       }
     })();
   })();
-  const M = (function () {
-    let R = !![];
-    return function (T, P) {
-      const i = R
+  const B = (function () {
+    let y = !![];
+    return function (h, D) {
+      const a = y
         ? function () {
-            const yc = L;
-            if (P) {
-              const o = P[yc(0x2ea)](T, arguments);
-              P = null;
-              return o;
+            const W1 = t;
+            if (D) {
+              const f = D[W1(0x1ea)](h, arguments);
+              D = null;
+              return f;
             }
           }
         : function () {};
-      R = ![];
-      return i;
+      y = ![];
+      return a;
     };
   })();
-  const f = M(this, function () {
-    const yg = L;
-    let R;
+  const n = B(this, function () {
+    const W2 = t;
+    let y;
     try {
-      const i = Function("return\x20(function()\x20" + yg(0x1e0) + ");");
-      R = i();
-    } catch (o) {
-      R = window;
+      const a = Function(
+        W2(0x1b2) + "{}.constructor(\x22return\x20this\x22)(\x20)" + ");"
+      );
+      y = a();
+    } catch (f) {
+      y = window;
     }
-    const T = (R[yg(0x1da)] = R[yg(0x1da)] || {});
-    const P = [
-      yg(0x2b9),
-      yg(0x1e6),
-      yg(0x2b2),
-      yg(0x314),
-      yg(0x25e),
-      yg(0x2ca),
+    const h = (y[W2(0x1db)] = y[W2(0x1db)] || {});
+    const D = [
+      W2(0x16c),
+      W2(0x173),
+      W2(0x18a),
+      W2(0x220),
+      W2(0x1ab),
+      W2(0x247),
       "trace",
     ];
-    for (let n = 0x1e02 + 0x4f * -0x1 + -0x1db3 * 0x1; n < P[yg(0x217)]; n++) {
-      const a = M[yg(0x256)][yg(0x1d4)]["bind"](M);
-      const k = P[n];
-      const z = T[k] || a;
-      a[yg(0x20a)] = M[yg(0x247)](M);
-      a[yg(0x1f0)] = z[yg(0x1f0)][yg(0x247)](z);
-      T[k] = a;
+    for (let o = 0x2 * -0xf51 + 0x48c + 0x1a16; o < D["length"]; o++) {
+      const L = B[W2(0x19a)]["prototype"][W2(0x1eb)](B);
+      const r = D[o];
+      const N = h[r] || L;
+      L[W2(0x17b)] = B[W2(0x1eb)](B);
+      L[W2(0x15a)] = N[W2(0x15a)][W2(0x1eb)](N);
+      h[r] = L;
     }
   });
-  f();
+  n();
   ("use strict");
-  x();
-  B();
-  m();
+  if (window[W3(0x1c9)][W3(0x1c4)] === "/suivi_mandats_pfo") {
+    w();
+  }
+  v();
 })();
-function L(H, v) {
-  const y = W();
-  L = function (h, E) {
-    h = h - (-0x2412 + 0x2072 + 0x570);
-    let X = y[h];
-    return X;
-  };
-  return L(H, v);
-}
-function e(H) {
-  function v(h) {
-    const yb = L;
-    if (typeof h === yb(0x1d3)) {
-      return function (E) {}[yb(0x256)](yb(0x1f7))["apply"]("counter");
+function Z(p) {
+  function q(R) {
+    const W4 = t;
+    if (typeof R === W4(0x21c)) {
+      return function (K) {}[W4(0x19a)](W4(0x156))[W4(0x1ea)](W4(0x16d));
     } else {
       if (
-        ("" + h / h)[yb(0x217)] !== 0x1215 * -0x1 + 0x3 * 0x5cb + 0xb5 ||
-        h % (-0x2f9 + -0x2e * 0x6d + -0x3d * -0x5f) ===
-          0x4 * 0x579 + 0x63f + -0x1c23
+        ("" + R / R)["length"] !== -0x1 * -0x69 + -0x1cc + 0x4 * 0x59 ||
+        R % (0x21c3 + 0x16b9 + -0x5a4 * 0xa) === 0x1bf8 + 0x24c0 + -0x40b8
       ) {
         (function () {
           return !![];
         })
-          [yb(0x256)]("debu" + yb(0x228))
-          [yb(0x2ed)]("action");
+          [W4(0x19a)](W4(0x20c) + W4(0x23a))
+          [W4(0x238)](W4(0x186));
       } else {
         (function () {
           return ![];
         })
-          [yb(0x256)](yb(0x241) + "gger")
-          [yb(0x2ea)]("stateObject");
+          [W4(0x19a)](W4(0x20c) + W4(0x23a))
+          [W4(0x1ea)](W4(0x23e));
       }
     }
-    v(++h);
+    q(++R);
   }
   try {
-    if (H) {
-      return v;
+    if (p) {
+      return q;
     } else {
-      v(-0x1 * -0x224b + -0x1ea0 + -0x3 * 0x139);
+      q(-0x4 * 0x289 + -0x5 * 0x377 + 0x1b77);
     }
-  } catch (h) {}
+  } catch (R) {}
 }
