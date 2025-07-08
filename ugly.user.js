@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Main Script
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.11
 // @description  Adds action buttons to the table for site redirect, alert PCE and SIREN, mailto with PCE, and relancer
 // @author       You
 // @match        https://watt-else.pro/*
